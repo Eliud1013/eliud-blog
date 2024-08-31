@@ -13,8 +13,7 @@ tabs:
   home: Home
   categories: Categories
   tags: Tags
-  archives: Archives
-  about: About
+  about: About Me
 
 # the text displayed in the search bar & search results
 search:
@@ -24,7 +23,7 @@ search:
 
 panel:
   lastmod: Recently Updated
-  trending_tags: Trending Tags
+  trending_tags: Tags you might be interested
   toc: Contents
 
 copyright:
@@ -35,7 +34,7 @@ copyright:
     link: https://creativecommons.org/licenses/by/4.0/
 
   # Displayed in the footer
-  brief: Some rights reserved.
+  #  brief: Some rights reserved.
   verbose: >-
     Except where otherwise noted, the blog posts on this site are licensed
     under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.
