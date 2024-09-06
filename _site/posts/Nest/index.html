@@ -40,13 +40,13 @@
 <meta property="og:image" content="https://www.hackthebox.com/storage/avatars/0b1bebcefe0bf8cf8c31de8f8e5b76dc.png" />
 <meta property="og:image:alt" content="Machine Icon" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-09-03T00:00:00-07:00" />
+<meta property="article:published_time" content="2024-09-03T05:00:00-07:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://www.hackthebox.com/storage/avatars/0b1bebcefe0bf8cf8c31de8f8e5b76dc.png" />
 <meta name="twitter:image:alt" content="Machine Icon" />
 <meta property="twitter:title" content="HTB: Nest Writeup" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-03T00:00:00-07:00","datePublished":"2024-09-03T00:00:00-07:00","description":"In this post we’re resolving Nest machine from HTB, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service.","headline":"HTB: Nest Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/0b1bebcefe0bf8cf8c31de8f8e5b76dc.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/Nest/"},"url":"http://localhost:5000/posts/Nest/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-03T22:37:47-07:00","datePublished":"2024-09-03T05:00:00-07:00","description":"In this post we’re resolving Nest machine from HTB, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service.","headline":"HTB: Nest Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/0b1bebcefe0bf8cf8c31de8f8e5b76dc.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/Nest/"},"url":"http://localhost:5000/posts/Nest/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1491,7 +1491,7 @@
 
 <time
   
-  data-ts="1725346800"
+  data-ts="1725364800"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -1503,6 +1503,28 @@
       </span>
 
       <!-- lastmod date -->
+      
+      <span>
+        Updated <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1725428267"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Sep  3, 2024
+</time>
+
+      </span>
            
 
       <div class="mt-3 mb-3">
@@ -1593,7 +1615,7 @@
 
 <h2 id="recon"><span class="me-2"><strong>Recon</strong></span><a href="#recon" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h3 id="service-enumeration"><span class="me-2"><strong>Service Enumeration</strong></span><a href="#service-enumeration" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="service-enumeration"><span class="me-2">Service Enumeration</span><a href="#service-enumeration" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <p>First we’re gonna start doing a service scan using nmap, we’re also perfoming a service version detection and executing default nmap scripts.</p>
 
@@ -3167,6 +3189,13 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/InsecureDeserialization/">Insecure Deserialization: Node.js</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/Nest/">HTB: Nest Writeup</a>
         </li>
       
@@ -3630,7 +3659,7 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
         <a class="post-tag btn btn-outline-primary" href="/tags/hard-coded-credentials/">Hard-coded Credentials</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/reconnaissance/">Reconnaissance</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/insecure-deserialization/">Insecure Deserialization</a>
       
     </div>
   </section>
@@ -3713,9 +3742,13 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/InsecureDeserialization/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Insecure Deserialization: Node.js</p>
+    </a>
   
 </nav>
 
@@ -4214,7 +4247,7 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
         <a class="post-tag btn btn-outline-primary" href="/tags/hard-coded-credentials/">Hard-coded Credentials</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/reconnaissance/">Reconnaissance</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/insecure-deserialization/">Insecure Deserialization</a>
       
     </div>
   </section>

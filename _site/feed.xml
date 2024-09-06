@@ -4,7 +4,7 @@
   <id>http://localhost:5000/</id>
   <title>Eliud's Blog</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-09-03T20:35:35-07:00</updated>
+  <updated>2024-09-06T16:32:19-07:00</updated>
   <author>
     <name>Eliud</name>
     <uri>http://localhost:5000/</uri>
@@ -20,11 +20,35 @@
 
   
   <entry>
+    <title>Insecure Deserialization: Node.js</title>
+    <link href="http://localhost:5000/posts/InsecureDeserialization/" rel="alternate" type="text/html" title="Insecure Deserialization: Node.js" />
+    <published>2024-09-06T05:00:00-07:00</published>
+  
+    <updated>2024-09-06T05:00:00-07:00</updated>
+  
+    <id>http://localhost:5000/posts/InsecureDeserialization/</id>
+    <content src="http://localhost:5000/posts/InsecureDeserialization/" />
+    <author>
+      <name>Eliud</name>
+    </author>
+
+  
+    
+    <category term="General" />
+    
+  
+
+  <summary>Insecure deserialization refers to a vulnerability where a program deserializes an attacker-controlled object representation, allowing the attacker to manipulate the structure of the object and potentially cause arbitrary code execution. In this post, we&amp;#39;re going to explore the basic serialization and deserialization process using a vulnerable library in Node.js. We&amp;#39;ll also see how insecure ser...</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>HTB: Nest Writeup</title>
     <link href="http://localhost:5000/posts/Nest/" rel="alternate" type="text/html" title="HTB: Nest Writeup" />
-    <published>2024-09-03T00:00:00-07:00</published>
+    <published>2024-09-03T05:00:00-07:00</published>
   
-    <updated>2024-09-03T00:00:00-07:00</updated>
+    <updated>2024-09-03T22:37:47-07:00</updated>
   
     <id>http://localhost:5000/posts/Nest/</id>
     <content src="http://localhost:5000/posts/Nest/" />

@@ -341,7 +341,7 @@ sup {
     height: 100%;
 
     -o-object-fit: contain;
-    object-fit: contain;
+    object-fit: cover;
 
     @extend %rounded;
 
