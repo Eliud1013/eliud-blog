@@ -34,8 +34,8 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="In this post we’re resolving Nest machine from HackTheBox, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service." />
 <meta property="og:description" content="In this post we’re resolving Nest machine from HackTheBox, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service." />
-<link rel="canonical" href="http://localhost:5000/posts/Nest/" />
-<meta property="og:url" content="http://localhost:5000/posts/Nest/" />
+<link rel="canonical" href="http://localhost:5000/https://eliud1013.github.io/posts/Nest/" />
+<meta property="og:url" content="http://localhost:5000/https://eliud1013.github.io/posts/Nest/" />
 <meta property="og:site_name" content="Eliud’s Blog" />
 <meta property="og:image" content="https://www.hackthebox.com/storage/avatars/0b1bebcefe0bf8cf8c31de8f8e5b76dc.png" />
 <meta property="og:image:alt" content="Machine Icon" />
@@ -46,7 +46,7 @@
 <meta name="twitter:image:alt" content="Machine Icon" />
 <meta property="twitter:title" content="HTB: Nest Writeup" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-09T20:50:23-07:00","datePublished":"2024-09-03T05:00:00-07:00","description":"In this post we’re resolving Nest machine from HackTheBox, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service.","headline":"HTB: Nest Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/0b1bebcefe0bf8cf8c31de8f8e5b76dc.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/Nest/"},"url":"http://localhost:5000/posts/Nest/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-09T20:50:23-07:00","datePublished":"2024-09-03T05:00:00-07:00","description":"In this post we’re resolving Nest machine from HackTheBox, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service.","headline":"HTB: Nest Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/0b1bebcefe0bf8cf8c31de8f8e5b76dc.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/https://eliud1013.github.io/posts/Nest/"},"url":"http://localhost:5000/https://eliud1013.github.io/posts/Nest/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -60,17 +60,17 @@
 
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/https://eliud1013.github.io/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/https://eliud1013.github.io/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/https://eliud1013.github.io/assets/img/favicons/favicon-16x16.png">
 
-  <link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+  <link rel="manifest" href="/https://eliud1013.github.io/assets/img/favicons/site.webmanifest">
 
-<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+<link rel="shortcut icon" href="/https://eliud1013.github.io/assets/img/favicons/favicon.ico">
 <meta name="apple-mobile-web-app-title" content="Eliud's Blog">
 <meta name="application-name" content="Eliud's Blog">
 <meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+<meta name="msapplication-config" content="/https://eliud1013.github.io/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
 
@@ -103,7 +103,7 @@
   
 
   <!-- Theme style -->
-  <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
+  <link rel="stylesheet" href="/https://eliud1013.github.io/assets/css/jekyll-theme-chirpy.css">
 
   <!-- Web Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
@@ -140,10 +140,10 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+    <a href="/https://eliud1013.github.io/" id="avatar" class="rounded-circle"><img src="https://eliud1013.github.io/assets/img/avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <h1 class="site-title">
-      <a href="/">Eliud's Blog</a>
+      <a href="/https://eliud1013.github.io/">Eliud's Blog</a>
     </h1>
     <p class="site-subtitle fst-italic mb-0">This is a cybersecurity blog that breaks down challenges across various categories. Here you will find detailed writeups, solutions to challenges from multiple platforms, and general resources on cybersecurity</p>
   </header>
@@ -153,7 +153,7 @@
     <ul class="nav">
       <!-- home -->
       <li class="nav-item">
-        <a href="/" class="nav-link">
+        <a href="/https://eliud1013.github.io/" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
           <span>HOME</span>
         </a>
@@ -161,7 +161,7 @@
       <!-- the real tabs -->
       
         <li class="nav-item">
-          <a href="/categories/" class="nav-link">
+          <a href="/https://eliud1013.github.io/categories/" class="nav-link">
             <i class="fa-fw fas fa-stream"></i>
             
 
@@ -171,7 +171,7 @@
         <!-- .nav-item -->
       
         <li class="nav-item">
-          <a href="/tags/" class="nav-link">
+          <a href="/https://eliud1013.github.io/tags/" class="nav-link">
             <i class="fa-fw fas fa-tags"></i>
             
 
@@ -181,7 +181,7 @@
         <!-- .nav-item -->
       
         <li class="nav-item">
-          <a href="/about/" class="nav-link">
+          <a href="/https://eliud1013.github.io/about/" class="nav-link">
             <i class="fa-fw fas fa-info-circle"></i>
             
 
@@ -265,7 +265,7 @@
 
       
         <a
-          href="/feed.xml"
+          href="/https://eliud1013.github.io/feed.xml"
           aria-label="rss"
           
 
@@ -301,7 +301,7 @@
         
           
             <span>
-              <a href="/">Home</a>
+              <a href="/https://eliud1013.github.io/">Home</a>
             </span>
 
           
@@ -2174,7 +2174,7 @@ smb: <span class="se">\I</span>T<span class="se">\C</span>arl<span class="se">\&
 Oh no… I forgot about it — I don’t know Visual Basic, but no problem; there’s a great extension in Visual Studio that will help us convert an entire VB project code into C# code, just in case you prefer reading C# code.
 Here’s also the <a href="https://github.com/icsharpcode/CodeConverter">GitHub Repository</a> of the
 extention.
-<a href="/assets/img/HackTheBox/Nest/img_2.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_2.png" alt="img_2" loading="lazy"></a></p>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_2.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_2.png" alt="img_2" loading="lazy"></a></p>
 
 <p>Another way to do this is building the source code and then analyze the binaries using dnSpy for example.</p>
 
@@ -2184,7 +2184,7 @@ extention.
 
 <p>The entry point for the project is in the <strong>Module1.cs</strong> class. It seems that this class is trying to create an instance of <strong>ConfigFile</strong> class using a file named <strong>RU_Config.xml</strong>, and then creating another instance for <strong>SsoIntegration</strong> class using <strong>ConfigFile</strong> object properties, such as, <strong>Config.Username</strong> and applying a method called DecryptString from the <strong>Utils</strong> class to <strong>Config.Password</strong>.</p>
 
-<p><a href="/assets/img/HackTheBox/Nest/img_3.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_3.png" alt="img_3" loading="lazy"></a></p>
+<p><a href="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_3.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_3.png" alt="img_3" loading="lazy"></a></p>
 
 <blockquote>
   <h4 id="decrypting-csmith-password"><span class="me-2">Decrypting c.smith password</span><a href="#decrypting-csmith-password" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
@@ -2215,15 +2215,15 @@ Password for [WORKGROUP\TempUser]:
 <p>Well, we can copy this file into the project and see what happens.
 If we run the project, we will get an <strong>System.IO.FileNotFoundException</strong>, indicating that RU_Config.xml file could not be found.</p>
 
-<p><a href="/assets/img/HackTheBox/Nest/img_4.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_4.png" alt="img_4" loading="lazy"></a></p>
+<p><a href="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_4.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_4.png" alt="img_4" loading="lazy"></a></p>
 
 <p>So we just need to copy <strong>RU_Config.xml</strong> file from the SMB Data Share to the path where the application is looking for it… And then the error will disappear.</p>
 
 <p>So, now we can simply print the <code class="language-plaintext highlighter-rouge">SsoIntegration</code> password attribute, as it contains the decrypted password.
-<a href="/assets/img/HackTheBox/Nest/img_5.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_5.png" alt="img_5" loading="lazy"></a></p>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_5.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_5.png" alt="img_5" loading="lazy"></a></p>
 
 <p>Another way to get the decrypted password is just calling the <code class="language-plaintext highlighter-rouge">DecryptString</code> method from Utils.cs class and pass the encrypted password as an argument, this is a more direct approach.
-<a href="/assets/img/HackTheBox/Nest/img_6.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_6.png" alt="img_6" loading="lazy"></a></p>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_6.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_6.png" alt="img_6" loading="lazy"></a></p>
 
 <p>So nice, we got credentials for <code class="language-plaintext highlighter-rouge">c.smith</code> user.
 First I am going use <code class="language-plaintext highlighter-rouge">CrackMapExec</code> to confirm if these are valid credentials.</p>
@@ -2743,7 +2743,7 @@ Well, just like with C.Smith’s password, this one is encrypted, we can try usi
 
 <p>We found some very interesting attributes. If we decompile the <code class="language-plaintext highlighter-rouge">HqkLdap.exe</code> binary using dnSpy and navigate to <code class="language-plaintext highlighter-rouge">MainModule</code> class, we will see the purpose of <code class="language-plaintext highlighter-rouge">Ldap.Conf</code>. Let’s see where is being used.</p>
 
-<p><a href="/assets/img/HackTheBox/Nest/img_8.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_8.png" alt="img_8" loading="lazy"></a></p>
+<p><a href="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_8.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_8.png" alt="img_8" loading="lazy"></a></p>
 
 <p>We can see that there are things happening here; the application is doing the following:</p>
 
@@ -2873,12 +2873,12 @@ Well, just like with C.Smith’s password, this one is encrypted, we can try usi
 
 <p>It is applying a function named <code class="language-plaintext highlighter-rouge">CR.DS</code> to the password. Let’s investigate what this function does.</p>
 
-<p><a href="/assets/img/HackTheBox/Nest/img_9.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_9.png" alt="img_9" loading="lazy"></a></p>
+<p><a href="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_9.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_9.png" alt="img_9" loading="lazy"></a></p>
 
 <p>We can see that <code class="language-plaintext highlighter-rouge">CR.DS</code> receives an encrypted string as a parameter, then passes it to <code class="language-plaintext highlighter-rouge">CR.RD</code> method as a parameter.
 Let’s see more about CR.RD:</p>
 
-<p><a href="/assets/img/HackTheBox/Nest/img_10.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_10.png" alt="img_10" loading="lazy"></a></p>
+<p><a href="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_10.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_10.png" alt="img_10" loading="lazy"></a></p>
 
 <p>I don’t know exactly how this code works, but I know it decrypts an AES ciphertext in CBC Mode using a PBKDF2 key. So, we can try to use these values in order to decrypt the administrator password.
 We can get the encryption parameters looking at the encryption/decryption functions (<code class="language-plaintext highlighter-rouge">CR.ES/CR.DS</code>), let’s take a look into the decryption functions.</p>
@@ -2992,14 +2992,14 @@ To create the PBKDF2 key, we need the following values:</p>
   <h4 id="getting-the-key"><span class="me-2">Getting the key</span><a href="#getting-the-key" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 </blockquote>
 
-<p><a href="/assets/img/HackTheBox/Nest/img_11.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_11.png" alt="img_11" loading="lazy"></a>
+<p><a href="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_11.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_11.png" alt="img_11" loading="lazy"></a>
 Nice, we’ve got the key; now let’s decrypt the password.</p>
 
 <blockquote>
   <h4 id="getting-the-password"><span class="me-2">Getting the password</span><a href="#getting-the-password" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 </blockquote>
 
-<p><a href="/assets/img/HackTheBox/Nest/img_12.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Nest/img_12.png" alt="img_12" loading="lazy"></a>
+<p><a href="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_12.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Nest/img_12.png" alt="img_12" loading="lazy"></a>
 And there it is the administrator password. Now let’s try to use these credentials to gain administrator access and read the root flag.</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
@@ -3050,11 +3050,11 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
       <i class="far fa-folder-open fa-fw me-1"></i>
       
       <a
-        href="/categories/hackthebox/"
+        href="https://eliud1013.github.io/categories/hackthebox/"
         >HackTheBox</a
       >,
       <a
-        href="/categories/ctf/"
+        href="https://eliud1013.github.io/categories/ctf/"
         >CTF</a
       >
     </div>
@@ -3066,77 +3066,77 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
       <i class="fa fa-tags fa-fw me-1"></i>
       
       <a
-        href="/tags/c/"
+        href="https://eliud1013.github.io/tags/c/"
         class="post-tag no-text-decoration"
       >C#</a>
       
       <a
-        href="/tags/vulnerability-assessment/"
+        href="https://eliud1013.github.io/tags/vulnerability-assessment/"
         class="post-tag no-text-decoration"
       >Vulnerability Assessment</a>
       
       <a
-        href="/tags/source-code-analysis/"
+        href="https://eliud1013.github.io/tags/source-code-analysis/"
         class="post-tag no-text-decoration"
       >Source Code Analysis</a>
       
       <a
-        href="/tags/cryptography/"
+        href="https://eliud1013.github.io/tags/cryptography/"
         class="post-tag no-text-decoration"
       >Cryptography</a>
       
       <a
-        href="/tags/authentication/"
+        href="https://eliud1013.github.io/tags/authentication/"
         class="post-tag no-text-decoration"
       >Authentication</a>
       
       <a
-        href="/tags/net/"
+        href="https://eliud1013.github.io/tags/net/"
         class="post-tag no-text-decoration"
       >.NET</a>
       
       <a
-        href="/tags/ads-ntfs/"
+        href="https://eliud1013.github.io/tags/ads-ntfs/"
         class="post-tag no-text-decoration"
       >ADS/NTFS</a>
       
       <a
-        href="/tags/smb/"
+        href="https://eliud1013.github.io/tags/smb/"
         class="post-tag no-text-decoration"
       >SMB</a>
       
       <a
-        href="/tags/reconnaissance/"
+        href="https://eliud1013.github.io/tags/reconnaissance/"
         class="post-tag no-text-decoration"
       >Reconnaissance</a>
       
       <a
-        href="/tags/decompilation/"
+        href="https://eliud1013.github.io/tags/decompilation/"
         class="post-tag no-text-decoration"
       >Decompilation</a>
       
       <a
-        href="/tags/clear-text-credentials/"
+        href="https://eliud1013.github.io/tags/clear-text-credentials/"
         class="post-tag no-text-decoration"
       >Clear Text Credentials</a>
       
       <a
-        href="/tags/weak-cryptography/"
+        href="https://eliud1013.github.io/tags/weak-cryptography/"
         class="post-tag no-text-decoration"
       >Weak Cryptography</a>
       
       <a
-        href="/tags/anonymous-guest-access/"
+        href="https://eliud1013.github.io/tags/anonymous-guest-access/"
         class="post-tag no-text-decoration"
       >Anonymous/Guest Access</a>
       
       <a
-        href="/tags/hard-coded-credentials/"
+        href="https://eliud1013.github.io/tags/hard-coded-credentials/"
         class="post-tag no-text-decoration"
       >Hard-coded Credentials</a>
       
       <a
-        href="/tags/reverse-engineering/"
+        href="https://eliud1013.github.io/tags/reverse-engineering/"
         class="post-tag no-text-decoration"
       >Reverse Engineering</a>
       
@@ -3189,21 +3189,21 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Nest/">HTB: Nest Writeup</a>
+          <a href="/https://eliud1013.github.io/posts/Nest/">HTB: Nest Writeup</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/InsecureDeserialization/">Insecure Deserialization: Node.js</a>
+          <a href="/https://eliud1013.github.io/posts/InsecureDeserialization/">Insecure Deserialization: Node.js</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Sauna/">HTB: Sauna Writeup</a>
+          <a href="/https://eliud1013.github.io/posts/Sauna/">HTB: Sauna Writeup</a>
         </li>
       
     </ul>
@@ -3732,34 +3732,34 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/authentication/">Authentication</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/authentication/">Authentication</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/reconnaissance/">Reconnaissance</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/reconnaissance/">Reconnaissance</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/vulnerability-assessment/">Vulnerability Assessment</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/vulnerability-assessment/">Vulnerability Assessment</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/net/">.NET</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/net/">.NET</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">Active Directory</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/active-directory/">Active Directory</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ad-dcsync/">AD DCSync</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/ad-dcsync/">AD DCSync</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ads-ntfs/">ADS/NTFS</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/ads-ntfs/">ADS/NTFS</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/asreproasting/">ASREPRoasting</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/asreproasting/">ASREPRoasting</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/autologon-credentials/">Autologon Credentials</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/autologon-credentials/">Autologon Credentials</a>
       
     </div>
   </section>
@@ -3843,7 +3843,7 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/Sauna/" class="post-preview card h-100">
+          <a href="/https://eliud1013.github.io/posts/Sauna/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -3891,7 +3891,7 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
 
   
     <a
-      href="/posts/InsecureDeserialization/"
+      href="https://eliud1013.github.io/posts/InsecureDeserialization/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
@@ -4461,34 +4461,34 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/authentication/">Authentication</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/authentication/">Authentication</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/reconnaissance/">Reconnaissance</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/reconnaissance/">Reconnaissance</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/vulnerability-assessment/">Vulnerability Assessment</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/vulnerability-assessment/">Vulnerability Assessment</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/net/">.NET</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/net/">.NET</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">Active Directory</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/active-directory/">Active Directory</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ad-dcsync/">AD DCSync</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/ad-dcsync/">AD DCSync</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ads-ntfs/">ADS/NTFS</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/ads-ntfs/">ADS/NTFS</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/asreproasting/">ASREPRoasting</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/asreproasting/">ASREPRoasting</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/autologon-credentials/">Autologon Credentials</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/autologon-credentials/">Autologon Credentials</a>
       
     </div>
   </section>
@@ -4633,7 +4633,7 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
 
   
 
-<script src="/assets/js/dist/post.min.js"></script>
+<script src="/https://eliud1013.github.io/assets/js/dist/post.min.js"></script>
 
 
 
@@ -4705,7 +4705,7 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
 <script>SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('search-results'),
-    json: '/assets/js/data/search.json',
+    json: '/https://eliud1013.github.io/assets/js/data/search.json',
     searchResultTemplate: '  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">    <header>      <h2><a href="{url}">{title}</a></h2>      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">        {categories}        {tags}      </div>    </header>    <p>{snippet}</p>  </article>',
     noResultsText: '<p class="mt-5">Oops! No results found.</p>',
     templateMiddleware: function(prop, value, template) {

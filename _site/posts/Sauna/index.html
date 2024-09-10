@@ -34,8 +34,8 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="In this post, we’re resolving Sauna Machine from HackTheBox, where we’ll deal with an Active Directory environment. We will exploit AS-REP Roasting on a domain account, reading autologon credentials and doing some domain ACEs analysis using BloodHound, finally we will perfom a DCSync attack to escalate our privileges." />
 <meta property="og:description" content="In this post, we’re resolving Sauna Machine from HackTheBox, where we’ll deal with an Active Directory environment. We will exploit AS-REP Roasting on a domain account, reading autologon credentials and doing some domain ACEs analysis using BloodHound, finally we will perfom a DCSync attack to escalate our privileges." />
-<link rel="canonical" href="http://localhost:5000/posts/Sauna/" />
-<meta property="og:url" content="http://localhost:5000/posts/Sauna/" />
+<link rel="canonical" href="http://localhost:5000/https://eliud1013.github.io/posts/Sauna/" />
+<meta property="og:url" content="http://localhost:5000/https://eliud1013.github.io/posts/Sauna/" />
 <meta property="og:site_name" content="Eliud’s Blog" />
 <meta property="og:image" content="https://www.hackthebox.com/storage/avatars/f31d5d0264fadc267e7f38a9d7729d14.png" />
 <meta property="og:image:alt" content="Machine Icon" />
@@ -46,7 +46,7 @@
 <meta name="twitter:image:alt" content="Machine Icon" />
 <meta property="twitter:title" content="HTB: Sauna Writeup" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-06T05:00:00-07:00","datePublished":"2024-09-06T05:00:00-07:00","description":"In this post, we’re resolving Sauna Machine from HackTheBox, where we’ll deal with an Active Directory environment. We will exploit AS-REP Roasting on a domain account, reading autologon credentials and doing some domain ACEs analysis using BloodHound, finally we will perfom a DCSync attack to escalate our privileges.","headline":"HTB: Sauna Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/f31d5d0264fadc267e7f38a9d7729d14.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/Sauna/"},"url":"http://localhost:5000/posts/Sauna/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-06T05:00:00-07:00","datePublished":"2024-09-06T05:00:00-07:00","description":"In this post, we’re resolving Sauna Machine from HackTheBox, where we’ll deal with an Active Directory environment. We will exploit AS-REP Roasting on a domain account, reading autologon credentials and doing some domain ACEs analysis using BloodHound, finally we will perfom a DCSync attack to escalate our privileges.","headline":"HTB: Sauna Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/f31d5d0264fadc267e7f38a9d7729d14.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/https://eliud1013.github.io/posts/Sauna/"},"url":"http://localhost:5000/https://eliud1013.github.io/posts/Sauna/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -60,17 +60,17 @@
 
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/https://eliud1013.github.io/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/https://eliud1013.github.io/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/https://eliud1013.github.io/assets/img/favicons/favicon-16x16.png">
 
-  <link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+  <link rel="manifest" href="/https://eliud1013.github.io/assets/img/favicons/site.webmanifest">
 
-<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+<link rel="shortcut icon" href="/https://eliud1013.github.io/assets/img/favicons/favicon.ico">
 <meta name="apple-mobile-web-app-title" content="Eliud's Blog">
 <meta name="application-name" content="Eliud's Blog">
 <meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+<meta name="msapplication-config" content="/https://eliud1013.github.io/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
 
@@ -103,7 +103,7 @@
   
 
   <!-- Theme style -->
-  <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
+  <link rel="stylesheet" href="/https://eliud1013.github.io/assets/css/jekyll-theme-chirpy.css">
 
   <!-- Web Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
@@ -140,10 +140,10 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+    <a href="/https://eliud1013.github.io/" id="avatar" class="rounded-circle"><img src="https://eliud1013.github.io/assets/img/avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <h1 class="site-title">
-      <a href="/">Eliud's Blog</a>
+      <a href="/https://eliud1013.github.io/">Eliud's Blog</a>
     </h1>
     <p class="site-subtitle fst-italic mb-0">This is a cybersecurity blog that breaks down challenges across various categories. Here you will find detailed writeups, solutions to challenges from multiple platforms, and general resources on cybersecurity</p>
   </header>
@@ -153,7 +153,7 @@
     <ul class="nav">
       <!-- home -->
       <li class="nav-item">
-        <a href="/" class="nav-link">
+        <a href="/https://eliud1013.github.io/" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
           <span>HOME</span>
         </a>
@@ -161,7 +161,7 @@
       <!-- the real tabs -->
       
         <li class="nav-item">
-          <a href="/categories/" class="nav-link">
+          <a href="/https://eliud1013.github.io/categories/" class="nav-link">
             <i class="fa-fw fas fa-stream"></i>
             
 
@@ -171,7 +171,7 @@
         <!-- .nav-item -->
       
         <li class="nav-item">
-          <a href="/tags/" class="nav-link">
+          <a href="/https://eliud1013.github.io/tags/" class="nav-link">
             <i class="fa-fw fas fa-tags"></i>
             
 
@@ -181,7 +181,7 @@
         <!-- .nav-item -->
       
         <li class="nav-item">
-          <a href="/about/" class="nav-link">
+          <a href="/https://eliud1013.github.io/about/" class="nav-link">
             <i class="fa-fw fas fa-info-circle"></i>
             
 
@@ -265,7 +265,7 @@
 
       
         <a
-          href="/feed.xml"
+          href="/https://eliud1013.github.io/feed.xml"
           aria-label="rss"
           
 
@@ -301,7 +301,7 @@
         
           
             <span>
-              <a href="/">Home</a>
+              <a href="/https://eliud1013.github.io/">Home</a>
             </span>
 
           
@@ -1990,17 +1990,17 @@ SMB         10.10.10.175    445    SAUNA            <span class="o">[</span><spa
 </pre></td></tr></tbody></table></code></div></div>
 
 <p>Now <code class="language-plaintext highlighter-rouge">egotistical-bank.local</code> will be resolved
-<a href="/assets/img/HackTheBox/Sauna/img_2.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_2.png" alt="img_2" loading="lazy"></a></p>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_2.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_2.png" alt="img_2" loading="lazy"></a></p>
 
 <p>We can attempt to get null or anonymous sessions on SMB or LDAP, but note that this is likely to fail. So let’s take a look at the website…</p>
 
 <h3 id="analyzing-the-website"><span class="me-2"><strong>Analyzing the Website</strong></span><a href="#analyzing-the-website" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <p>It appears to be a bank’s website, but I didn’t find anything interesting. There are some contact forms, but they don’t work, we’ll receive a <code class="language-plaintext highlighter-rouge">Method not allowed</code> HTTP response. I prefer to not to put effort into trying to making them work.
-<a href="/assets/img/HackTheBox/Sauna/img_3.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_3.png" alt="img_3" loading="lazy"></a></p>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_3.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_3.png" alt="img_3" loading="lazy"></a></p>
 
 <p>If we scroll down in the <code class="language-plaintext highlighter-rouge">about.html</code> page, we will find the following:
-<a href="/assets/img/HackTheBox/Sauna/img_4.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_4.png" alt="img_4" loading="lazy"></a>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_4.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_4.png" alt="img_4" loading="lazy"></a>
 We see that there are some employee names. We can use these names to create a username wordlist to try to find valid usernames in the domain.
 Who knows?, they might have domain accounts, let’s figure out.</p>
 
@@ -2011,23 +2011,23 @@ Who knows?, they might have domain accounts, let’s figure out.</p>
 
 <p>We can use <code class="language-plaintext highlighter-rouge">curl</code> and <code class="language-plaintext highlighter-rouge">grep</code> using LookAround expressions to easily extract the employes names the from the about webpage.
 Alternatively, we could simply copy the names and paste them into a file manually. I preffer to complicate things to myself.
-<a href="/assets/img/HackTheBox/Sauna/img_5.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_5.png" alt="img_5" loading="lazy"></a></p>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_5.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_5.png" alt="img_5" loading="lazy"></a></p>
 
 <p>Well, once we have the employee names in a file, we can run the script to generate possible Active Directory usernames.
-<a href="/assets/img/HackTheBox/Sauna/img_6.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_6.png" alt="img_6" loading="lazy"></a>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_6.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_6.png" alt="img_6" loading="lazy"></a>
 There is also a great tool for generating this type of wordlist. You can download it from its GitHub repository if you prefer using Python: <a href="https://github.com/captain-noob/username-wordlist-generator">username-list-generator
 </a></p>
 
 <p>Nice, now that we’ve got a username wordlist, we can use <code class="language-plaintext highlighter-rouge">Kerbrute</code> to enumerate valid users through Kerberos. Kerbrute will request a TGT for every user in the wordlist without providing a password. If the user exists, the KDC will notify us that the user does not have the <code class="language-plaintext highlighter-rouge">DONT_REQ_PREAUTH</code> flag set. If the user does not exists, the KDC will return an <code class="language-plaintext highlighter-rouge">ERR_C_PRINCIPAL_UNKNOWN</code> error. This way, <code class="language-plaintext highlighter-rouge">Kerbrute</code> can determine wheter a user exists or not.
 Obviusly, if the user has the <code class="language-plaintext highlighter-rouge">DONT_REQ_PREAUTH</code> flag set, <code class="language-plaintext highlighter-rouge">Kerbrute</code> will mark the user as valid.
-<a href="/assets/img/HackTheBox/Sauna/img_7.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_7.png" alt="img_7" loading="lazy"></a>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_7.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_7.png" alt="img_7" loading="lazy"></a>
 Cool, we’ve enumerated one valid user, that might be enough. Let’s find out.</p>
 
 <h3 id="as-rep-roasting"><span class="me-2">AS-REP Roasting</span><a href="#as-rep-roasting" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <p>Now that we’ve found a valid user, we can use <code class="language-plaintext highlighter-rouge">impacket-NPUsers</code> to check whether <code class="language-plaintext highlighter-rouge">FSmith</code> requires pre-authentication or not.</p>
 
-<p><a href="/assets/img/HackTheBox/Sauna/img_9.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_9.png" alt="img_9" loading="lazy"></a></p>
+<p><a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_9.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_9.png" alt="img_9" loading="lazy"></a></p>
 
 <p>Great, <code class="language-plaintext highlighter-rouge">FSmith</code> does not require pre-authentication to request a TGT from the KDC. This means we can send a <code class="language-plaintext highlighter-rouge">KRB_AS_REQ</code> message without providing the user password which will let us receive a <code class="language-plaintext highlighter-rouge">KRB_AS_REP</code> message, which contains the <code class="language-plaintext highlighter-rouge">TGT</code>, and the following items encrypted with a secret key derived from the user’s password:</p>
 
@@ -2039,7 +2039,7 @@ Cool, we’ve enumerated one valid user, that might be enough. Let’s find out.
 
 <p>So, when we attempt to take advantage of a user who has the <code class="language-plaintext highlighter-rouge">DONT_REQ_PREAUTH</code> flag set, we’re going to focus on bruteforce the mentioned package, not directly the TGT as the TGT is encrypted using a secret key derived from the user <code class="language-plaintext highlighter-rouge">krbtgt</code> password, which is a very large password. Although we don’t need to worry about this, as Hashcat will do all the stuff for us but is good to know this kind of things. Anyway we can refer to this process as <code class="language-plaintext highlighter-rouge">TGT Cracking</code>.
 Here we can take a look in the <code class="language-plaintext highlighter-rouge">KRB_AS_REP</code> package from Wireshark:
-<a href="/assets/img/HackTheBox/Sauna/img_8.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_8.png" alt="img_8" loading="lazy"></a></p>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_8.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_8.png" alt="img_8" loading="lazy"></a></p>
 
 <p>We can see that there are two encrypted parts (enc-part): one is in the <code class="language-plaintext highlighter-rouge">ticket</code> part, which is the TGT , and the another at the same ticket level; is the data that the user can decrypt with his password.</p>
 
@@ -2053,7 +2053,7 @@ Here we can take a look in the <code class="language-plaintext highlighter-rouge
 
 <p>To crack the TGT we can use several tools, I prefer to use <code class="language-plaintext highlighter-rouge">Hashcat</code>, but <code class="language-plaintext highlighter-rouge">John</code> is a great option too.
 Hashcat need us to provide a <code class="language-plaintext highlighter-rouge">hash mode</code> with <code class="language-plaintext highlighter-rouge">-m</code> parameter. We can find the mode for <code class="language-plaintext highlighter-rouge">AS-REP</code> with the following command:
-<a href="/assets/img/HackTheBox/Sauna/img_10.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_10.png" alt="img_10" loading="lazy"></a></p>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_10.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_10.png" alt="img_10" loading="lazy"></a></p>
 
 <p>Nice, the appropiate mode is <code class="language-plaintext highlighter-rouge">18200</code>, now let’s see if we can get the password.</p>
 
@@ -2071,17 +2071,17 @@ Hashcat need us to provide a <code class="language-plaintext highlighter-rouge">
   <p>Output:</p>
 </blockquote>
 
-<p><a href="/assets/img/HackTheBox/Sauna/img_11.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_11.png" alt="img_11" loading="lazy"></a>
+<p><a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_11.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_11.png" alt="img_11" loading="lazy"></a>
 And we’ve got the password for the <code class="language-plaintext highlighter-rouge">FSmith</code> user:
 <strong>Thestrokes23</strong></p>
 
 <h3 id="logging-in-as-user-fsmith"><span class="me-2"><strong>Logging in as user FSmith</strong></span><a href="#logging-in-as-user-fsmith" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <p>Now we can use <code class="language-plaintext highlighter-rouge">PywerView</code> to see which domain groups <code class="language-plaintext highlighter-rouge">FSmith</code> belongs to.
-<a href="/assets/img/HackTheBox/Sauna/img_12.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_12.png" alt="img_12" loading="lazy"></a></p>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_12.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_12.png" alt="img_12" loading="lazy"></a></p>
 
 <p>Remote Management Users… Nice, in that case let’s get shell using <code class="language-plaintext highlighter-rouge">evil-winrm</code> and read the user flag.
-<a href="/assets/img/HackTheBox/Sauna/img_13.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_13.png" alt="img_13" loading="lazy"></a></p>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_13.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_13.png" alt="img_13" loading="lazy"></a></p>
 
 <hr />
 
@@ -2090,11 +2090,11 @@ And we’ve got the password for the <code class="language-plaintext highlighter
 <h3 id="system-enumeration"><span class="me-2"><strong>System Enumeration</strong></span><a href="#system-enumeration" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <p>Now that we’ve obtained a shell, we will proceed to enumerate the system. To do this, I’m going to use <code class="language-plaintext highlighter-rouge">WinPeas.exe</code>. Let’s see what we can find.
-<a href="/assets/img/HackTheBox/Sauna/img_14.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_14.png" alt="img_14" loading="lazy"></a></p>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_14.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_14.png" alt="img_14" loading="lazy"></a></p>
 
 <p>If we search for the <code class="language-plaintext highlighter-rouge">password</code> keyword, we’ll find plain text autologon credentials for the user <code class="language-plaintext highlighter-rouge">svc_loanmanager</code>. I really got stuck with these credentials, because the user is actually <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> and not <code class="language-plaintext highlighter-rouge">svc_loanmanager</code> , I guess the registry hive for autologons is outdated. Anyway, if we list user directories in <code class="language-plaintext highlighter-rouge">C:\Users\</code>, we’ll find the real username.</p>
 
-<p><a href="/assets/img/HackTheBox/Sauna/img_15.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_15.png" alt="img_15" loading="lazy"></a></p>
+<p><a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_15.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_15.png" alt="img_15" loading="lazy"></a></p>
 
 <p>Well, now let’s use <code class="language-plaintext highlighter-rouge">evil-winrm</code> again with these new credentials and continue enumerating with this new user.
 Since we have a service account we should consider using <code class="language-plaintext highlighter-rouge">Bloodhound</code> to easily look at that privileges do we have in the domain.</p>
@@ -2105,18 +2105,18 @@ Since we have a service account we should consider using <code class="language-p
 <h3 id="dcsync"><span class="me-2"><strong>DCSync</strong></span><a href="#dcsync" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <p>If we filter by Principals with DCSync rights, we’ll see the following:
-<a href="/assets/img/HackTheBox/Sauna/img_16.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_16.png" alt="img_16" loading="lazy"></a>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_16.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_16.png" alt="img_16" loading="lazy"></a>
 The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> has <code class="language-plaintext highlighter-rouge">DCSync</code> rights; kinda strange permissions for a service account meant to manage loans.</p>
 
 <p>To exploit a domain using <code class="language-plaintext highlighter-rouge">DCSync</code> rights, we essentially tell the Domain Controller that we are another Domain Controller and we want to synchronize the domain database. So we request the whole database which includes absolutely all the domain information, including NTLM hashes of every account in the domain. This database is named <code class="language-plaintext highlighter-rouge">NTDS</code> and is present in every domain controller.</p>
 
 <p>So now let’s use <code class="language-plaintext highlighter-rouge">impacket-secretsdump</code> to dump the NTDS.
-<a href="/assets/img/HackTheBox/Sauna/img_17.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_17.png" alt="img_17" loading="lazy"></a></p>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_17.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_17.png" alt="img_17" loading="lazy"></a></p>
 
 <h3 id="pth-as-administrator"><span class="me-2"><strong>PtH as Administrator</strong></span><a href="#pth-as-administrator" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <p>Now we can use the Administrator NTLM Hash to perform a Pass-the-Hash attack. There are a lot of tools that support authentication using NTLM hashes, I’ll use <code class="language-plaintext highlighter-rouge">evil-winrm</code>.
-<a href="/assets/img/HackTheBox/Sauna/img_18.png" class="popup img-link  shimmer"><img src="/assets/img/HackTheBox/Sauna/img_18.png" alt="img_18" loading="lazy"></a></p>
+<a href="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_18.png" class="popup img-link  shimmer"><img src="https://eliud1013.github.io/assets/img/HackTheBox/Sauna/img_18.png" alt="img_18" loading="lazy"></a></p>
 
 <p>This was a very easy machine, and it was enjoyable to work on, especially if you’re unfamiliar with AS-REP Roasting and DCSync.</p>
 </div>
@@ -2128,11 +2128,11 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
       <i class="far fa-folder-open fa-fw me-1"></i>
       
       <a
-        href="/categories/hackthebox/"
+        href="https://eliud1013.github.io/categories/hackthebox/"
         >HackTheBox</a
       >,
       <a
-        href="/categories/ctf/"
+        href="https://eliud1013.github.io/categories/ctf/"
         >CTF</a
       >
     </div>
@@ -2144,67 +2144,67 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
       <i class="fa fa-tags fa-fw me-1"></i>
       
       <a
-        href="/tags/vulnerability-assessment/"
+        href="https://eliud1013.github.io/tags/vulnerability-assessment/"
         class="post-tag no-text-decoration"
       >Vulnerability Assessment</a>
       
       <a
-        href="/tags/active-directory/"
+        href="https://eliud1013.github.io/tags/active-directory/"
         class="post-tag no-text-decoration"
       >Active Directory</a>
       
       <a
-        href="/tags/security-tools/"
+        href="https://eliud1013.github.io/tags/security-tools/"
         class="post-tag no-text-decoration"
       >Security Tools</a>
       
       <a
-        href="/tags/authentication/"
+        href="https://eliud1013.github.io/tags/authentication/"
         class="post-tag no-text-decoration"
       >Authentication</a>
       
       <a
-        href="/tags/reconnaissance/"
+        href="https://eliud1013.github.io/tags/reconnaissance/"
         class="post-tag no-text-decoration"
       >Reconnaissance</a>
       
       <a
-        href="/tags/user-enumeration/"
+        href="https://eliud1013.github.io/tags/user-enumeration/"
         class="post-tag no-text-decoration"
       >User Enumeration</a>
       
       <a
-        href="/tags/password-cracking/"
+        href="https://eliud1013.github.io/tags/password-cracking/"
         class="post-tag no-text-decoration"
       >Password Cracking</a>
       
       <a
-        href="/tags/asreproasting/"
+        href="https://eliud1013.github.io/tags/asreproasting/"
         class="post-tag no-text-decoration"
       >ASREPRoasting</a>
       
       <a
-        href="/tags/ad-dcsync/"
+        href="https://eliud1013.github.io/tags/ad-dcsync/"
         class="post-tag no-text-decoration"
       >AD DCSync</a>
       
       <a
-        href="/tags/pass-the-hash/"
+        href="https://eliud1013.github.io/tags/pass-the-hash/"
         class="post-tag no-text-decoration"
       >Pass the Hash</a>
       
       <a
-        href="/tags/misconfiguration/"
+        href="https://eliud1013.github.io/tags/misconfiguration/"
         class="post-tag no-text-decoration"
       >Misconfiguration</a>
       
       <a
-        href="/tags/autologon-credentials/"
+        href="https://eliud1013.github.io/tags/autologon-credentials/"
         class="post-tag no-text-decoration"
       >Autologon Credentials</a>
       
       <a
-        href="/tags/enterprise-network/"
+        href="https://eliud1013.github.io/tags/enterprise-network/"
         class="post-tag no-text-decoration"
       >Enterprise Network</a>
       
@@ -2257,21 +2257,21 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Nest/">HTB: Nest Writeup</a>
+          <a href="/https://eliud1013.github.io/posts/Nest/">HTB: Nest Writeup</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/InsecureDeserialization/">Insecure Deserialization: Node.js</a>
+          <a href="/https://eliud1013.github.io/posts/InsecureDeserialization/">Insecure Deserialization: Node.js</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Sauna/">HTB: Sauna Writeup</a>
+          <a href="/https://eliud1013.github.io/posts/Sauna/">HTB: Sauna Writeup</a>
         </li>
       
     </ul>
@@ -2800,34 +2800,34 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/authentication/">Authentication</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/authentication/">Authentication</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/reconnaissance/">Reconnaissance</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/reconnaissance/">Reconnaissance</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/vulnerability-assessment/">Vulnerability Assessment</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/vulnerability-assessment/">Vulnerability Assessment</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/net/">.NET</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/net/">.NET</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">Active Directory</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/active-directory/">Active Directory</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ad-dcsync/">AD DCSync</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/ad-dcsync/">AD DCSync</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ads-ntfs/">ADS/NTFS</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/ads-ntfs/">ADS/NTFS</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/asreproasting/">ASREPRoasting</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/asreproasting/">ASREPRoasting</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/autologon-credentials/">Autologon Credentials</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/autologon-credentials/">Autologon Credentials</a>
       
     </div>
   </section>
@@ -2911,7 +2911,7 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/Nest/" class="post-preview card h-100">
+          <a href="/https://eliud1013.github.io/posts/Nest/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2953,7 +2953,7 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
 
   
     <a
-      href="/posts/InsecureDeserialization/"
+      href="https://eliud1013.github.io/posts/InsecureDeserialization/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
@@ -3529,34 +3529,34 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/authentication/">Authentication</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/authentication/">Authentication</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/reconnaissance/">Reconnaissance</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/reconnaissance/">Reconnaissance</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/vulnerability-assessment/">Vulnerability Assessment</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/vulnerability-assessment/">Vulnerability Assessment</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/net/">.NET</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/net/">.NET</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">Active Directory</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/active-directory/">Active Directory</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ad-dcsync/">AD DCSync</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/ad-dcsync/">AD DCSync</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ads-ntfs/">ADS/NTFS</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/ads-ntfs/">ADS/NTFS</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/asreproasting/">ASREPRoasting</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/asreproasting/">ASREPRoasting</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/autologon-credentials/">Autologon Credentials</a>
+        <a class="post-tag btn btn-outline-primary" href="/https://eliud1013.github.io/tags/autologon-credentials/">Autologon Credentials</a>
       
     </div>
   </section>
@@ -3694,7 +3694,7 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
 
   
 
-<script src="/assets/js/dist/post.min.js"></script>
+<script src="/https://eliud1013.github.io/assets/js/dist/post.min.js"></script>
 
 
 
@@ -3715,7 +3715,7 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
 <script>SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('search-results'),
-    json: '/assets/js/data/search.json',
+    json: '/https://eliud1013.github.io/assets/js/data/search.json',
     searchResultTemplate: '  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">    <header>      <h2><a href="{url}">{title}</a></h2>      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">        {categories}        {tags}      </div>    </header>    <p>{snippet}</p>  </article>',
     noResultsText: '<p class="mt-5">Oops! No results found.</p>',
     templateMiddleware: function(prop, value, template) {

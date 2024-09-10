@@ -2,4 +2,4 @@ User-agent: *
 
 Disallow: /norobots/
 
-Sitemap: http://localhost:5000/sitemap.xml
+Sitemap: http://localhost:5000/https://eliud1013.github.io/sitemap.xml
