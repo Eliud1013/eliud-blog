@@ -2,10 +2,10 @@
   
   {
     "title": "HTB: Sauna Writeup",
-    "url": "/https://eliud1013.github.io/posts/Sauna/",
+    "url": "/posts/Sauna/",
     "categories": "HackTheBox, CTF",
     "tags": "Vulnerability Assessment, Active Directory, Security Tools, Authentication, Reconnaissance, User Enumeration, Password Cracking, ASREPRoasting, AD DCSync, Pass the Hash, Misconfiguration, Autologon Credentials, Enterprise Network",
-    "date": "2024-09-06 05:00:00 -0700",
+    "date": "2024-09-09 05:00:00 -0700",
     
 
 
@@ -19,7 +19,7 @@
   
   {
     "title": "Insecure Deserialization: Node.js",
-    "url": "/https://eliud1013.github.io/posts/InsecureDeserialization/",
+    "url": "/posts/InsecureDeserialization/",
     "categories": "General",
     "tags": "Web Application, Insecure Deserialization, Node.js",
     "date": "2024-09-06 05:00:00 -0700",
@@ -36,7 +36,7 @@
   
   {
     "title": "HTB: Nest Writeup",
-    "url": "/https://eliud1013.github.io/posts/Nest/",
+    "url": "/posts/Nest/",
     "categories": "HackTheBox, CTF",
     "tags": "C#, Vulnerability Assessment, Source Code Analysis, Cryptography, Authentication, .NET, ADS/NTFS, SMB, Reconnaissance, Decompilation, Clear Text Credentials, Weak Cryptography, Anonymous/Guest Access, Hard-coded Credentials, Reverse Engineering",
     "date": "2024-09-03 05:00:00 -0700",

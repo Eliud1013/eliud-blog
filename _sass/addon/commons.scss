@@ -334,7 +334,8 @@ sup {
   @extend %rounded;
 
   &:not(.no-bg) {
-    background: var(--img-bg);
+    // background: var(--img-bg);
+    background: rgb(20, 20, 26);
   }
 
   img {
@@ -361,8 +362,8 @@ sup {
   @extend %rounded;
 
   &:not(.no-bg) {
-    //background: var(--img-bg);
-    background: #18181b;
+    //    background: var(--img-bg);
+    background-color: (12, 12, 30);
   }
 
   img {
@@ -383,7 +384,7 @@ sup {
   @extend %rounded;
 
   border: 0;
-  background: var(--card-bg);
+  background: rgb(20, 20, 26);
   box-shadow: var(--card-shadow);
 
   &::before {

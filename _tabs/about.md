@@ -12,6 +12,4 @@ I have developed a robust understanding of various aspects of the software devel
 
 ---
 
-### About this page
-
-This website was created using the Chirpy theme, an open-source theme designed by Cotes Chung for Jekyll. I would like to express my gratitude to the original creator for providing this beautifully crafted theme that made the development of this site possible. You can find more about the Chirpy theme on its [GitHub repository](https://github.com/cotes2020/jekyll-theme-chirpy).
+[![Download CV](https://img.shields.io/badge/Download%20CV-blue)](ruta/a/tu/cv.pdf)

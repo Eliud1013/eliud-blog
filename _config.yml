@@ -14,9 +14,9 @@ timezone: America/Hermosillo
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Eliud's Blog # the main title
+title: Hacking Vault # the main title
 
-tagline: This is a cybersecurity blog that breaks down challenges across various categories. Here you will find detailed writeups, solutions to challenges from multiple platforms, and general resources on cybersecurity # it will display as the subtitle
+tagline: This is a personal cybersecurity blog that breaks down challenges across various categories. Here you will find detailed writeups, solutions to challenges from multiple platforms, and general resources on cybersecurity # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -150,7 +150,8 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "https://eliud1013.github.io"
+#baseurl: "https://eliud1013.github.io"
+baseurl: ""
 
 # ------------ The following options are not recommended to be modified ------------------
 
