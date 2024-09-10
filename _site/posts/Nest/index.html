@@ -32,8 +32,8 @@
 <meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="HTB: Nest Writeup" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="In this post we’re resolving Nest machine from HTB, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service." />
-<meta property="og:description" content="In this post we’re resolving Nest machine from HTB, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service." />
+<meta name="description" content="In this post we’re resolving Nest machine from HackTheBox, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service." />
+<meta property="og:description" content="In this post we’re resolving Nest machine from HackTheBox, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service." />
 <link rel="canonical" href="http://localhost:5000/posts/Nest/" />
 <meta property="og:url" content="http://localhost:5000/posts/Nest/" />
 <meta property="og:site_name" content="Eliud’s Blog" />
@@ -46,7 +46,7 @@
 <meta name="twitter:image:alt" content="Machine Icon" />
 <meta property="twitter:title" content="HTB: Nest Writeup" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-03T22:37:47-07:00","datePublished":"2024-09-03T05:00:00-07:00","description":"In this post we’re resolving Nest machine from HTB, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service.","headline":"HTB: Nest Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/0b1bebcefe0bf8cf8c31de8f8e5b76dc.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/Nest/"},"url":"http://localhost:5000/posts/Nest/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-06T16:33:51-07:00","datePublished":"2024-09-03T05:00:00-07:00","description":"In this post we’re resolving Nest machine from HackTheBox, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service.","headline":"HTB: Nest Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/0b1bebcefe0bf8cf8c31de8f8e5b76dc.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/Nest/"},"url":"http://localhost:5000/posts/Nest/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1475,7 +1475,7 @@
   <header>
     <h1 data-toc-skip>HTB: Nest Writeup</h1>
     
-    <p class="post-desc fw-light mb-4">In this post we're resolving Nest machine from HTB, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service.</p>
+    <p class="post-desc fw-light mb-4">In this post we're resolving Nest machine from HackTheBox, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service.</p>
     
 
     <div class="post-meta text-muted">
@@ -1515,13 +1515,13 @@
 
 <time
   
-  data-ts="1725428267"
+  data-ts="1725665631"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Sep  3, 2024
+  Sep  6, 2024
 </time>
 
       </span>
@@ -3189,6 +3189,13 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/Nest/">HTB: Nest Writeup</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/InsecureDeserialization/">Insecure Deserialization: Node.js</a>
         </li>
       
@@ -3196,7 +3203,7 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Nest/">HTB: Nest Writeup</a>
+          <a href="/posts/Sauna/">HTB: Sauna Writeup</a>
         </li>
       
     </ul>
@@ -3225,6 +3232,289 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
         
         
@@ -3425,196 +3715,6 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -3632,7 +3732,22 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/authentication/">Authentication</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/reconnaissance/">Reconnaissance</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/vulnerability-assessment/">Vulnerability Assessment</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/net/">.NET</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">Active Directory</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ad-dcsync/">AD DCSync</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/ads-ntfs/">ADS/NTFS</a>
@@ -3641,25 +3756,10 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
         <a class="post-tag btn btn-outline-primary" href="/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/authentication/">Authentication</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/asreproasting/">ASREPRoasting</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/c/">C#</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/clear-text-credentials/">Clear Text Credentials</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/cryptography/">Cryptography</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/decompilation/">Decompilation</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/hard-coded-credentials/">Hard-coded Credentials</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/insecure-deserialization/">Insecure Deserialization</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/autologon-credentials/">Autologon Credentials</a>
       
     </div>
   </section>
@@ -3716,6 +3816,17 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
 
@@ -3725,6 +3836,43 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
 
 
 
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/Sauna/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1725624000"
+  data-df="ll"
+  
+>
+  Sep  6, 2024
+</time>
+
+              <h4 class="pt-0 my-2">HTB: Sauna Writeup</h4>
+              <div class="text-muted">
+                <p>In this post, we&#39;re resolving Sauna Machine from HackTheBox, where we&#39;ll deal with an Active Directory environment. We will exploit AS-REP Roasting on a domain account, reading autologon credential...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
 
 
             
@@ -3813,6 +3961,289 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
         
         
@@ -4013,196 +4444,6 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -4220,7 +4461,22 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/authentication/">Authentication</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/reconnaissance/">Reconnaissance</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/vulnerability-assessment/">Vulnerability Assessment</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/net/">.NET</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">Active Directory</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ad-dcsync/">AD DCSync</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/ads-ntfs/">ADS/NTFS</a>
@@ -4229,25 +4485,10 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
         <a class="post-tag btn btn-outline-primary" href="/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/authentication/">Authentication</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/asreproasting/">ASREPRoasting</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/c/">C#</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/clear-text-credentials/">Clear Text Credentials</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/cryptography/">Cryptography</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/decompilation/">Decompilation</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/hard-coded-credentials/">Hard-coded Credentials</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/insecure-deserialization/">Insecure Deserialization</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/autologon-credentials/">Autologon Credentials</a>
       
     </div>
   </section>

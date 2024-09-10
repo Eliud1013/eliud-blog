@@ -4,7 +4,7 @@
   <id>http://localhost:5000/</id>
   <title>Eliud's Blog</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-09-06T16:32:19-07:00</updated>
+  <updated>2024-09-09T20:47:23-07:00</updated>
   <author>
     <name>Eliud</name>
     <uri>http://localhost:5000/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>HTB: Sauna Writeup</title>
+    <link href="http://localhost:5000/posts/Sauna/" rel="alternate" type="text/html" title="HTB: Sauna Writeup" />
+    <published>2024-09-06T05:00:00-07:00</published>
+  
+    <updated>2024-09-06T05:00:00-07:00</updated>
+  
+    <id>http://localhost:5000/posts/Sauna/</id>
+    <content src="http://localhost:5000/posts/Sauna/" />
+    <author>
+      <name>Eliud</name>
+    </author>
+
+  
+    
+    <category term="HackTheBox" />
+    
+    <category term="CTF" />
+    
+  
+
+  <summary>In this post, we&amp;#39;re resolving Sauna Machine from HackTheBox, where we&amp;#39;ll deal with an Active Directory environment. We will exploit AS-REP Roasting on a domain account, reading autologon credentials and doing some domain ACEs analysis using BloodHound, finally we will perfom a DCSync attack to escalate our privileges.</summary>
+
+  </entry>
 
   
   <entry>
@@ -48,7 +74,7 @@
     <link href="http://localhost:5000/posts/Nest/" rel="alternate" type="text/html" title="HTB: Nest Writeup" />
     <published>2024-09-03T05:00:00-07:00</published>
   
-    <updated>2024-09-03T22:37:47-07:00</updated>
+    <updated>2024-09-06T16:33:51-07:00</updated>
   
     <id>http://localhost:5000/posts/Nest/</id>
     <content src="http://localhost:5000/posts/Nest/" />
@@ -64,7 +90,7 @@
     
   
 
-  <summary>In this post we&amp;#39;re resolving Nest machine from HTB, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service.</summary>
+  <summary>In this post we&amp;#39;re resolving Nest machine from HackTheBox, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service.</summary>
 
   </entry>
 
