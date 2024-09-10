@@ -4,7 +4,7 @@
   <id>http://localhost:5000/</id>
   <title>Eliud's Blog</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-09-09T20:47:23-07:00</updated>
+  <updated>2024-09-09T21:23:56-07:00</updated>
   <author>
     <name>Eliud</name>
     <uri>http://localhost:5000/</uri>
@@ -74,7 +74,7 @@
     <link href="http://localhost:5000/posts/Nest/" rel="alternate" type="text/html" title="HTB: Nest Writeup" />
     <published>2024-09-03T05:00:00-07:00</published>
   
-    <updated>2024-09-06T16:33:51-07:00</updated>
+    <updated>2024-09-09T20:50:23-07:00</updated>
   
     <id>http://localhost:5000/posts/Nest/</id>
     <content src="http://localhost:5000/posts/Nest/" />
