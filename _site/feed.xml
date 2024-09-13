@@ -2,9 +2,9 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://localhost:5000/</id>
-  <title>Hacking Vault</title>
+  <title>Elixir1013</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-09-10T16:50:56-07:00</updated>
+  <updated>2024-09-13T09:31:04-07:00</updated>
   <author>
     <name>Eliud</name>
     <uri>http://localhost:5000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:5000/posts/Sauna/" rel="alternate" type="text/html" title="HTB: Sauna Writeup" />
     <published>2024-09-09T05:00:00-07:00</published>
   
-    <updated>2024-09-09T05:00:00-07:00</updated>
+    <updated>2024-09-10T16:51:20-07:00</updated>
   
     <id>http://localhost:5000/posts/Sauna/</id>
     <content src="http://localhost:5000/posts/Sauna/" />
