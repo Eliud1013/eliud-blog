@@ -1,0 +1,32 @@
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  background: white;
+  pointer-events: none;
+  animation: twinkle 1.5s infinite ease-in-out;
+  opacity: 0; /* Las estrellas empiezan invisibles */
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -6,7 +6,7 @@
   /* Framework color */
 
   //--main-bg: rgb(20, 20, 20);
-  --main-bg: rgb(10, 10, 28);
+  --main-bg: rgb(5, 5, 5);
   --mask-bg: rgb(68, 69, 70);
   --main-border-color: rgb(44, 45, 45);
   //--main-bg: linear-gradient(85deg, rgb(14, 14, 30) 100%, rgb(24, 24, 27) 100%);
@@ -43,7 +43,8 @@
   --sidebar-bg: linear-gradient(
     -10deg,
     rgb(10, 10, 28) 0%,
-    rgb(10, 10, 17) 50%
+    rgb(10, 10, 17) 50%,
+    rgb(2, 2, 2) 100%
   );
 
   //good: --sidebar-bg: rgb(12, 13, 35);
@@ -57,7 +58,7 @@
   --avatar-border-color: rgb(206, 206, 206, 0.9);
 
   /* Topbar */
-  --topbar-bg: rgb(10, 10, 28, 0.64);
+  --topbar-bg: rgb(5, 5, 5, 0.64);
   --topbar-text-color: var(--text-color);
   --search-border-color: rgb(55, 55, 55);
   --search-icon-color: rgb(100, 102, 105);
