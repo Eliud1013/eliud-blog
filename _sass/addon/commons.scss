@@ -384,7 +384,7 @@ sup {
   @extend %rounded;
 
   border: 0;
-  background: rgb(20, 20, 26);
+  background: rgb(21, 21, 25);
   box-shadow: var(--card-shadow);
 
   &::before {
@@ -448,7 +448,8 @@ main {
   font-size: 1.08rem;
   margin-top: 2rem;
   overflow-wrap: break-word;
-  font-family: "monospace";
+  font-family: monospace;
+  color: rgb(184, 184, 184);
 
   a {
     &.popup {
