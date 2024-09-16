@@ -8,11 +8,10 @@ layout: page
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <style>
       #terminal {
         z-index: 0;
-        background-color: rgb(6, 6, 6);
+        background-color: #050505;
         padding: 20px;
         border-radius: 5px;
         color: #ff0000; /* Red font like a bash terminal */
@@ -24,27 +23,54 @@ layout: page
       #prompt {
         color: #ff00ff; /* Purple for the prompt */
       }
+      #prompt2 {
+        display: none;
+        color: #ff00ff; /* Purple for the prompt */
+      }
       #command {
-        color: #ffff00; /* Yellow for 'ccat -c' */
-      }
-      #file {
-        color: #ff0000; /* Red for './message.cpt' */
-      }
-      #text {
-        color: #c00000; /* Red for the message */
+        color: #ffff00; /* Default color for command */
         white-space: pre-wrap;
-        display: none; /* Hide text initially */
+        display: inline;
       }
-      #passwordPrompt {
-        color: #ffd900; /* Yellow for the password prompt */
+      .green {
+        color: #00ff00; /* Green for '-c' */
+      }
+      .red {
+        color: #ff0000; /* Red for './message.txt' */
+      }
+      #decryption {
+        color: #ffd900; /* Yellow for 'Decryption Key:' */
+        display: none; /* Initially hidden */
       }
       #password {
-        color: #f32d2d; /* Green for the password asterisks */
+        color: #f32d2d; /* Red for the password asterisks */
+        white-space: pre-wrap;
+        display: none; /* Initially hidden */
+      }
+      #message {
+        color: #c00000; /* Red for the message */
+        white-space: pre-wrap;
         display: inline;
+      }
+      #cursor_command {
+        display: inline-block;
+        background-color: #ff0000; /* Red cursor color */
+        width: 10px;
+        height: 1em;
+        animation: blink 0.8s step-start infinite;
+        vertical-align: middle; /* Centra el cursor verticalmente con el texto */
+        position: relative;
+        top: -0.1em; /* Ajuste fino para centrar el cursor */
+      }
+
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
       }
       #downloadButton {
         display: none; /* Hidden initially */
-        margin-top: 20px;
+        margin-top: 20px; /* Aumentado de 20px a 40px para más espacio */
         padding: 10px 20px;
         background-color: #c40000; /* Green button */
         color: #000000; /* Black text */
@@ -55,6 +81,7 @@ layout: page
         text-decoration: none;
         text-align: center;
       }
+
       #downloadButton:hover {
         background-color: #940000df; /* Darker green on hover */
       }
@@ -62,14 +89,15 @@ layout: page
   </head>
   <body>
     <div id="terminal">
-      <span id="prompt">elixir1013@webserver01# </span>
-      <span id="command"></span>
-      <span id="file"></span>
+      <span id="prompt">elixir1013@webserver01:~# </span>
+
+      <span id="command"></span><span id="cursor_command"></span>
       <br />
-      <span id="passwordPrompt"></span>
-      <span id="password"></span>
+      <span id="decryption">Decryption Key: </span><span id="password"></span>
       <br />
-      <span id="text"></span>
+      <span id="message"></span>
+
+      <br />
       <a
         id="downloadButton"
         href="path_to_your_cv.pdf"
@@ -78,5 +106,6 @@ layout: page
       >
     </div>
   </body>
+
   <script src="/assets/js/dist/terminal.js"></script>
 </html>

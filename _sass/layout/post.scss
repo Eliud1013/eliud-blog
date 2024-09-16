@@ -9,7 +9,7 @@
 }
 
 @mixin dot($pl: 0.25rem, $pr: 0.25rem) {
-  content: '\2022';
+  content: "\2022";
   padding-left: $pl;
   padding-right: $pr;
 }
@@ -338,7 +338,7 @@ header {
   @include label(inherit, 400, inherit);
 
   &::after {
-    content: ':';
+    content: ":";
   }
 }
 
