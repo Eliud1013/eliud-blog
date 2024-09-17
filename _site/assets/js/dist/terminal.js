@@ -19,7 +19,7 @@ const commandText = [
 
 const passwordText = "***************"; // Simulate a password with asterisks
 const messageText =
-  "\nHello from Sonora Mexico!\nMy name is Eliud Gaxiola. I’m in my 7th semester of Software Engineering at ITSON, close to graduating. Right now, I’m focusing on cybersecurity through self-study and participating in Capture The Flag (CTF) challenges on platforms like HackTheBox and TryHackMe.\nI’ve got a good grasp of the software development lifecycle, including programming, database management, and cybersecurity basics. I’m also familiar with networking and operating systems like Linux and Windows, which helps me handle various tech challenges";
+  "\nHello from Sonora México!\nMy name is Eliud Gaxiola. I’m in my 7th semester of Software Engineering at ITSON, close to graduating. Right now, I’m focusing on cybersecurity through self-study and participating in Capture The Flag (CTF) challenges on platforms like HackTheBox and TryHackMe.\nI’ve got a good grasp of the software development lifecycle, including programming, database management, and cybersecurity basics. I’m also familiar with networking and operating systems like Linux and Windows, which helps me handle various tech challenges";
 let commandIndex = 0;
 let charIndex = 0;
 
