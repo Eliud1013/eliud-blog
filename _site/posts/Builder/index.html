@@ -54,7 +54,7 @@
 <meta name="twitter:image:alt" content="Machine Icon" />
 <meta property="twitter:title" content="HTB: Builder Writeup" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-16T05:00:00-07:00","datePublished":"2024-09-16T05:00:00-07:00","description":"Builder is a Medium HTB machine where we exploit Jenkins CVE-2024-23897, which allows us to read files on the server. We can retrieve user credentials by enumerating Jenkins configuration files, crack passwords using hashcat, and then use Jenkins’ stored SSH credentials to escalate privileges.","headline":"HTB: Builder Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/a0f6d6a08e0806448341587cd59450a6.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/Builder/"},"url":"http://localhost:5000/posts/Builder/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-20T01:23:41-07:00","datePublished":"2024-09-16T05:00:00-07:00","description":"Builder is a Medium HTB machine where we exploit Jenkins CVE-2024-23897, which allows us to read files on the server. We can retrieve user credentials by enumerating Jenkins configuration files, crack passwords using hashcat, and then use Jenkins’ stored SSH credentials to escalate privileges.","headline":"HTB: Builder Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/a0f6d6a08e0806448341587cd59450a6.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/Builder/"},"url":"http://localhost:5000/posts/Builder/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1772,6 +1772,28 @@
       </span>
 
       <!-- lastmod date -->
+      
+      <span>
+        Updated <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1726820621"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Sep 20, 2024
+</time>
+
+      </span>
            
 
       <div class="mt-3 mb-3">
@@ -3493,18 +3515,22 @@ If you get an error related to host key verification just ignore the warning by 
 
   
     <a
-      href="/posts/CheatSheet-net-Command/"
+      href="/posts/Sauna/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Cheat Sheet: net Command</p>
+      <p>HTB: Sauna Writeup</p>
     </a>
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/CheatSheet-net-Command/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Cheat Sheet: net Command</p>
+    </a>
   
 </nav>
    <!-- The comments switcher -->

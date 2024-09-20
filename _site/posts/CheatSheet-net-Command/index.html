@@ -48,13 +48,13 @@
 <meta property="og:image" content="/assets/img/General/CheatSheet: net Command/icon.png" />
 <meta property="og:image:alt" content="Reference Icon" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-09-15T05:00:00-07:00" />
+<meta property="article:published_time" content="2024-09-19T05:00:00-07:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="/assets/img/General/CheatSheet: net Command/icon.png" />
 <meta name="twitter:image:alt" content="Reference Icon" />
 <meta property="twitter:title" content="Cheat Sheet: net Command" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-15T05:00:00-07:00","datePublished":"2024-09-15T05:00:00-07:00","description":"The net command is a command-line tool that enables the management and configuration of various services and network resources. This cheat sheet includes the net commands that I find particularly useful.","headline":"Cheat Sheet: net Command","image":{"alt":"Reference Icon","url":"/assets/img/General/CheatSheet: net Command/icon.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/CheatSheet-net-Command/"},"url":"http://localhost:5000/posts/CheatSheet-net-Command/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-19T05:00:00-07:00","datePublished":"2024-09-19T05:00:00-07:00","description":"The net command is a command-line tool that enables the management and configuration of various services and network resources. This cheat sheet includes the net commands that I find particularly useful.","headline":"Cheat Sheet: net Command","image":{"alt":"Reference Icon","url":"/assets/img/General/CheatSheet: net Command/icon.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/CheatSheet-net-Command/"},"url":"http://localhost:5000/posts/CheatSheet-net-Command/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -512,6 +512,17 @@
       
         
         
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
       
 
       
@@ -1316,13 +1327,13 @@
 
 <time
   
-  data-ts="1726401600"
+  data-ts="1726747200"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Sep 15, 2024
+  Sep 19, 2024
 </time>
 
       </span>
@@ -1364,9 +1375,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1631 words"
+  title="1922 words"
 >
-  <em>9 min</em> read</span>
+  <em>10 min</em> read</span>
 
         </div>
       </div>
@@ -2379,6 +2390,133 @@ The Print Spooler service was continued successfully.
       <td> </td>
       <td><code class="language-plaintext highlighter-rouge">net continue \&lt;ServiceName\&gt;</code></td>
       <td>Resumes a paused service</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<hr />
+
+<h2 id="summary-of-commands"><span class="me-2"><strong>Summary of Commands</strong></span><a href="#summary-of-commands" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th><strong>Command</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net user</code></td>
+      <td>Shows local system accounts.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net user &lt;user&gt;</code></td>
+      <td>Displays detailed information about a specific user.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net user &lt;user&gt; &lt;password&gt;</code></td>
+      <td>Changes the specified user’s password.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net user &lt;user&gt; &lt;password&gt; /add</code></td>
+      <td>Creates a new user with the specified password.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net user &lt;user&gt; /delete</code></td>
+      <td>Deletes the specified user from the system.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net user &lt;user&gt; /active:&lt;yes             | no&gt;</code></td>
+      <td>Activates or deactivates a user.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net localgroup</code></td>
+      <td>Shows existing local groups.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net localgroup &lt;group&gt;</code></td>
+      <td>Displays members of a specific group.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net localgroup &lt;group&gt; /add</code></td>
+      <td>Creates a new local group.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net localgroup &lt;group&gt; /delete</code></td>
+      <td>Deletes a local group.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net localgroup &lt;group&gt; &lt;user&gt; /add</code></td>
+      <td>Adds a user to a local group.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net localgroup &lt;group&gt; &lt;user&gt; /delete</code></td>
+      <td>Removes a user from a local group.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net use</code></td>
+      <td>Displays all currently connected network resources.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net use &lt;drive letter&gt; \\&lt;host&gt;\&lt;share&gt;</code></td>
+      <td>Maps a network shared resource to the specified drive letter.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net use &lt;drive letter&gt; /delete</code></td>
+      <td>Deletes the specified network drive, unmapping the share resource.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net share</code></td>
+      <td>Shows the local shared resources.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net share &lt;share&gt;</code></td>
+      <td>Displays detailed information about the specified shared resource.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net share &lt;share name&gt;=&lt;drive&gt;:\&lt;path&gt;</code></td>
+      <td>Creates a new shared resource mapped to the provided path.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net share &lt;share&gt; /delete</code></td>
+      <td>Removes the specified shared resource.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net view</code></td>
+      <td>Displays a list of computers in the current domain.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net view \\&lt;ComputerName&gt;</code></td>
+      <td>Displays a list of shared resources in the specified computer.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net file</code></td>
+      <td>Displays a list of open files on a server and the users who have them open.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net file &lt;ID&gt;</code></td>
+      <td>Closes an open file by specifying its ID number.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net start</code></td>
+      <td>Displays all initialized services in the local system.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net start &lt;ServiceName&gt;</code></td>
+      <td>Starts the specified service.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net stop &lt;ServiceName&gt;</code></td>
+      <td>Stops the specified service.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net pause &lt;ServiceName&gt;</code></td>
+      <td>Pauses the specified service.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">net continue &lt;ServiceName&gt;</code></td>
+      <td>Resumes a paused service.</td>
     </tr>
   </tbody>
 </table></div>
@@ -3747,22 +3885,18 @@ The Print Spooler service was continued successfully.
 
   
     <a
-      href="/posts/Sauna/"
+      href="/posts/Builder/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>HTB: Sauna Writeup</p>
+      <p>HTB: Builder Writeup</p>
     </a>
   
 
   
-    <a
-      href="/posts/Builder/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>HTB: Builder Writeup</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
    <!-- The comments switcher -->

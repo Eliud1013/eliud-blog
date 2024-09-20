@@ -1,7 +1,7 @@
 ---
 title: "Cheat Sheet: net Command"
 description: "The net command is a command-line tool that enables the management and configuration of various services and network resources. This cheat sheet includes the net commands that I find particularly useful."
-date: 2024-09-15 12:00:00
+date: 2024-09-19 12:00:00
 categories: [General, CheatSheet]
 tags: ["User Enumeration", "Windows Enumeration", "System Enumeration"]
 mermaid: true
@@ -575,5 +575,40 @@ The Print Spooler service was continued successfully.
 |`net stop \<ServiceName\>`| Stops the specified service|
 |`net pause \<ServiceName\>`|Pauses the specified service|
 |`net continue \<ServiceName\>`|Resumes a paused service|
+
+---
+
+## **Summary of Commands**
+
+| **Command**                               | **Description**                                                             |
+| ----------------------------------------- | --------------------------------------------------------------------------- | -------------------------------- |
+| `net user`                                | Shows local system accounts.                                                |
+| `net user <user>`                         | Displays detailed information about a specific user.                        |
+| `net user <user> <password>`              | Changes the specified user's password.                                      |
+| `net user <user> <password> /add`         | Creates a new user with the specified password.                             |
+| `net user <user> /delete`                 | Deletes the specified user from the system.                                 |
+| `net user <user> /active:<yes             | no>`                                                                        | Activates or deactivates a user. |
+| `net localgroup`                          | Shows existing local groups.                                                |
+| `net localgroup <group>`                  | Displays members of a specific group.                                       |
+| `net localgroup <group> /add`             | Creates a new local group.                                                  |
+| `net localgroup <group> /delete`          | Deletes a local group.                                                      |
+| `net localgroup <group> <user> /add`      | Adds a user to a local group.                                               |
+| `net localgroup <group> <user> /delete`   | Removes a user from a local group.                                          |
+| `net use`                                 | Displays all currently connected network resources.                         |
+| `net use <drive letter> \\<host>\<share>` | Maps a network shared resource to the specified drive letter.               |
+| `net use <drive letter> /delete`          | Deletes the specified network drive, unmapping the share resource.          |
+| `net share`                               | Shows the local shared resources.                                           |
+| `net share <share>`                       | Displays detailed information about the specified shared resource.          |
+| `net share <share name>=<drive>:\<path>`  | Creates a new shared resource mapped to the provided path.                  |
+| `net share <share> /delete`               | Removes the specified shared resource.                                      |
+| `net view`                                | Displays a list of computers in the current domain.                         |
+| `net view \\<ComputerName>`               | Displays a list of shared resources in the specified computer.              |
+| `net file`                                | Displays a list of open files on a server and the users who have them open. |
+| `net file <ID>`                           | Closes an open file by specifying its ID number.                            |
+| `net start`                               | Displays all initialized services in the local system.                      |
+| `net start <ServiceName>`                 | Starts the specified service.                                               |
+| `net stop <ServiceName>`                  | Stops the specified service.                                                |
+| `net pause <ServiceName>`                 | Pauses the specified service.                                               |
+| `net continue <ServiceName>`              | Resumes a paused service.                                                   |
 
 ---
