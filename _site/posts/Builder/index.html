@@ -42,8 +42,8 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="Builder is a Medium HTB machine where we exploit Jenkins CVE-2024-23897, which allows us to read files on the server. We can retrieve user credentials by enumerating Jenkins configuration files, crack passwords using hashcat, and then use Jenkins’ stored SSH credentials to escalate privileges." />
 <meta property="og:description" content="Builder is a Medium HTB machine where we exploit Jenkins CVE-2024-23897, which allows us to read files on the server. We can retrieve user credentials by enumerating Jenkins configuration files, crack passwords using hashcat, and then use Jenkins’ stored SSH credentials to escalate privileges." />
-<link rel="canonical" href="http://localhost:5000/posts/Builder/" />
-<meta property="og:url" content="http://localhost:5000/posts/Builder/" />
+<link rel="canonical" href="/posts/Builder/" />
+<meta property="og:url" content="/posts/Builder/" />
 <meta property="og:site_name" content="Elixir1013" />
 <meta property="og:image" content="https://www.hackthebox.com/storage/avatars/a0f6d6a08e0806448341587cd59450a6.png" />
 <meta property="og:image:alt" content="Machine Icon" />
@@ -54,7 +54,7 @@
 <meta name="twitter:image:alt" content="Machine Icon" />
 <meta property="twitter:title" content="HTB: Builder Writeup" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-20T01:23:41-07:00","datePublished":"2024-09-16T05:00:00-07:00","description":"Builder is a Medium HTB machine where we exploit Jenkins CVE-2024-23897, which allows us to read files on the server. We can retrieve user credentials by enumerating Jenkins configuration files, crack passwords using hashcat, and then use Jenkins’ stored SSH credentials to escalate privileges.","headline":"HTB: Builder Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/a0f6d6a08e0806448341587cd59450a6.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/Builder/"},"url":"http://localhost:5000/posts/Builder/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-20T01:23:41-07:00","datePublished":"2024-09-16T05:00:00-07:00","description":"Builder is a Medium HTB machine where we exploit Jenkins CVE-2024-23897, which allows us to read files on the server. We can retrieve user credentials by enumerating Jenkins configuration files, crack passwords using hashcat, and then use Jenkins’ stored SSH credentials to escalate privileges.","headline":"HTB: Builder Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/a0f6d6a08e0806448341587cd59450a6.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"/posts/Builder/"},"url":"/posts/Builder/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2231,7 +2231,7 @@ If you get an error related to host key verification just ignore the warning by 
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Builder/">HTB: Builder Writeup</a>
+          <a href="/posts/Escape/">HTB: Escape Writeup</a>
         </li>
       
         
@@ -2239,6 +2239,13 @@ If you get an error related to host key verification just ignore the warning by 
         
         <li class="text-truncate lh-lg">
           <a href="/posts/CheatSheet-net-Command/">Cheat Sheet: net Command</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Builder/">HTB: Builder Writeup</a>
         </li>
       
         
@@ -2253,13 +2260,6 @@ If you get an error related to host key verification just ignore the warning by 
         
         <li class="text-truncate lh-lg">
           <a href="/posts/Nest/">HTB: Nest Writeup</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/InsecureDeserialization/">Insecure Deserialization: Node.js</a>
         </li>
       
     </ul>
@@ -2407,6 +2407,46 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -2536,7 +2576,106 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2627,81 +2766,6 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
     
   
@@ -2723,118 +2787,6 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2945,6 +2897,179 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -3012,7 +3137,79 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3048,16 +3245,10 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -3095,36 +3286,10 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -3141,6 +3306,11 @@ If you get an error related to host key verification just ignore the warning by 
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -3228,10 +3398,11 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
-      
-        
-        
-
+  
+    
+    
+    
+    
   
     
     
@@ -3244,10 +3415,16 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
-      
-        
-        
-
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -3260,7 +3437,112 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3281,9 +3563,6 @@ If you get an error related to host key verification just ignore the warning by 
         <a class="post-tag btn btn-outline-primary" href="/tags/reconnaissance/">Reconnaissance</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/user-enumeration/">User Enumeration</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/vulnerability-assessment/">Vulnerability Assessment</a>
       
         
@@ -3296,16 +3575,19 @@ If you get an error related to host key verification just ignore the warning by 
         <a class="post-tag btn btn-outline-primary" href="/tags/password-cracking/">Password Cracking</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/web-application/">Web Application</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/net/">.NET</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/user-enumeration/">User Enumeration</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">Active Directory</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ad-dcsync/">AD DCSync</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/enterprise-network/">Enterprise Network</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/pass-the-hash/">Pass the Hash</a>
       
     </div>
   </section>
@@ -3405,6 +3687,18 @@ If you get an error related to host key verification just ignore the warning by 
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -3448,6 +3742,34 @@ If you get an error related to host key verification just ignore the warning by 
         </article>
       
         <article class="col">
+          <a href="/posts/Escape/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1728129600"
+  data-df="ll"
+  
+>
+  Oct  5, 2024
+</time>
+
+              <h4 class="pt-0 my-2">HTB: Escape Writeup</h4>
+              <div class="text-muted">
+                <p>Scape is a Medium Windows AD machine. It starts with an SMB share exposing a PDF containing MSSQL credentials. The attacker forces MSSQL to authenticate and captures a crackable hash. With these cr...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
           <a href="/posts/Nest/" class="post-preview card h-100">
             <div class="card-body">
               <!--
@@ -3470,34 +3792,6 @@ If you get an error related to host key verification just ignore the warning by 
               <h4 class="pt-0 my-2">HTB: Nest Writeup</h4>
               <div class="text-muted">
                 <p>In this post we&#39;re resolving Nest machine from HackTheBox, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sen...</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/InsecureDeserialization/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1725624000"
-  data-df="ll"
-  
->
-  Sep  6, 2024
-</time>
-
-              <h4 class="pt-0 my-2">Insecure Deserialization: Node.js</h4>
-              <div class="text-muted">
-                <p>Insecure deserialization refers to a vulnerability where a program deserializes an attacker-controlled object representation, allowing the attacker to manipulate the structure of the object and pot...</p>
               </div>
             </div>
           </a>
@@ -3709,6 +4003,46 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -3838,7 +4172,106 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3929,81 +4362,6 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
     
   
@@ -4025,118 +4383,6 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -4247,6 +4493,179 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -4314,7 +4733,79 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -4350,16 +4841,10 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -4397,36 +4882,10 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -4443,6 +4902,11 @@ If you get an error related to host key verification just ignore the warning by 
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -4530,10 +4994,11 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
-      
-        
-        
-
+  
+    
+    
+    
+    
   
     
     
@@ -4546,10 +5011,16 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
-      
-        
-        
-
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -4562,7 +5033,112 @@ If you get an error related to host key verification just ignore the warning by 
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -4583,9 +5159,6 @@ If you get an error related to host key verification just ignore the warning by 
         <a class="post-tag btn btn-outline-primary" href="/tags/reconnaissance/">Reconnaissance</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/user-enumeration/">User Enumeration</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/vulnerability-assessment/">Vulnerability Assessment</a>
       
         
@@ -4598,16 +5171,19 @@ If you get an error related to host key verification just ignore the warning by 
         <a class="post-tag btn btn-outline-primary" href="/tags/password-cracking/">Password Cracking</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/web-application/">Web Application</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/net/">.NET</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/user-enumeration/">User Enumeration</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">Active Directory</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ad-dcsync/">AD DCSync</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/enterprise-network/">Enterprise Network</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/pass-the-hash/">Pass the Hash</a>
       
     </div>
   </section>

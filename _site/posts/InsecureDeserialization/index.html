@@ -42,19 +42,19 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="Insecure deserialization refers to a vulnerability where a program deserializes an attacker-controlled object representation, allowing the attacker to manipulate the structure of the object and potentially cause arbitrary code execution. In this post, we’re going to explore the basic serialization and deserialization process using a vulnerable library in Node.js. We’ll also see how insecure serialization can lead to remote code execution and a practical example!" />
 <meta property="og:description" content="Insecure deserialization refers to a vulnerability where a program deserializes an attacker-controlled object representation, allowing the attacker to manipulate the structure of the object and potentially cause arbitrary code execution. In this post, we’re going to explore the basic serialization and deserialization process using a vulnerable library in Node.js. We’ll also see how insecure serialization can lead to remote code execution and a practical example!" />
-<link rel="canonical" href="http://localhost:5000/posts/InsecureDeserialization/" />
-<meta property="og:url" content="http://localhost:5000/posts/InsecureDeserialization/" />
+<link rel="canonical" href="/posts/InsecureDeserialization/" />
+<meta property="og:url" content="/posts/InsecureDeserialization/" />
 <meta property="og:site_name" content="Elixir1013" />
-<meta property="og:image" content="http://localhost:5000/assets/img/General/Insecure Deserialization/icon.webp" />
+<meta property="og:image" content="/assets/img/General/Insecure Deserialization/icon.webp" />
 <meta property="og:image:alt" content="Reference Icon" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-09-06T05:00:00-07:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="http://localhost:5000/assets/img/General/Insecure Deserialization/icon.webp" />
+<meta property="twitter:image" content="/assets/img/General/Insecure Deserialization/icon.webp" />
 <meta name="twitter:image:alt" content="Reference Icon" />
 <meta property="twitter:title" content="Insecure Deserialization: Node.js" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-06T05:00:00-07:00","datePublished":"2024-09-06T05:00:00-07:00","description":"Insecure deserialization refers to a vulnerability where a program deserializes an attacker-controlled object representation, allowing the attacker to manipulate the structure of the object and potentially cause arbitrary code execution. In this post, we’re going to explore the basic serialization and deserialization process using a vulnerable library in Node.js. We’ll also see how insecure serialization can lead to remote code execution and a practical example!","headline":"Insecure Deserialization: Node.js","image":{"alt":"Reference Icon","url":"http://localhost:5000/assets/img/General/Insecure Deserialization/icon.webp","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/InsecureDeserialization/"},"url":"http://localhost:5000/posts/InsecureDeserialization/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-06T05:00:00-07:00","datePublished":"2024-09-06T05:00:00-07:00","description":"Insecure deserialization refers to a vulnerability where a program deserializes an attacker-controlled object representation, allowing the attacker to manipulate the structure of the object and potentially cause arbitrary code execution. In this post, we’re going to explore the basic serialization and deserialization process using a vulnerable library in Node.js. We’ll also see how insecure serialization can lead to remote code execution and a practical example!","headline":"Insecure Deserialization: Node.js","image":{"alt":"Reference Icon","url":"/assets/img/General/Insecure Deserialization/icon.webp","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"/posts/InsecureDeserialization/"},"url":"/posts/InsecureDeserialization/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1660,7 +1660,7 @@ We can serialize an object that contains a function that will establish a TCP co
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Builder/">HTB: Builder Writeup</a>
+          <a href="/posts/Escape/">HTB: Escape Writeup</a>
         </li>
       
         
@@ -1668,6 +1668,13 @@ We can serialize an object that contains a function that will establish a TCP co
         
         <li class="text-truncate lh-lg">
           <a href="/posts/CheatSheet-net-Command/">Cheat Sheet: net Command</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Builder/">HTB: Builder Writeup</a>
         </li>
       
         
@@ -1682,13 +1689,6 @@ We can serialize an object that contains a function that will establish a TCP co
         
         <li class="text-truncate lh-lg">
           <a href="/posts/Nest/">HTB: Nest Writeup</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/InsecureDeserialization/">Insecure Deserialization: Node.js</a>
         </li>
       
     </ul>
@@ -1836,6 +1836,46 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1965,7 +2005,106 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2056,81 +2195,6 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
     
   
@@ -2152,118 +2216,6 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2374,6 +2326,179 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -2441,7 +2566,79 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2477,16 +2674,10 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -2524,36 +2715,10 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -2570,6 +2735,11 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -2657,10 +2827,11 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
-      
-        
-        
-
+  
+    
+    
+    
+    
   
     
     
@@ -2673,10 +2844,16 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
-      
-        
-        
-
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -2689,7 +2866,112 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2710,9 +2992,6 @@ We can serialize an object that contains a function that will establish a TCP co
         <a class="post-tag btn btn-outline-primary" href="/tags/reconnaissance/">Reconnaissance</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/user-enumeration/">User Enumeration</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/vulnerability-assessment/">Vulnerability Assessment</a>
       
         
@@ -2725,16 +3004,19 @@ We can serialize an object that contains a function that will establish a TCP co
         <a class="post-tag btn btn-outline-primary" href="/tags/password-cracking/">Password Cracking</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/web-application/">Web Application</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/net/">.NET</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/user-enumeration/">User Enumeration</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">Active Directory</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ad-dcsync/">AD DCSync</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/enterprise-network/">Enterprise Network</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/pass-the-hash/">Pass the Hash</a>
       
     </div>
   </section>
@@ -3086,6 +3368,46 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -3215,7 +3537,106 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3306,81 +3727,6 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
     
   
@@ -3402,118 +3748,6 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -3624,6 +3858,179 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -3691,7 +4098,79 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3727,16 +4206,10 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -3774,36 +4247,10 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -3820,6 +4267,11 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -3907,10 +4359,11 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
-      
-        
-        
-
+  
+    
+    
+    
+    
   
     
     
@@ -3923,10 +4376,16 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
-      
-        
-        
-
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -3939,7 +4398,112 @@ We can serialize an object that contains a function that will establish a TCP co
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3960,9 +4524,6 @@ We can serialize an object that contains a function that will establish a TCP co
         <a class="post-tag btn btn-outline-primary" href="/tags/reconnaissance/">Reconnaissance</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/user-enumeration/">User Enumeration</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/vulnerability-assessment/">Vulnerability Assessment</a>
       
         
@@ -3975,16 +4536,19 @@ We can serialize an object that contains a function that will establish a TCP co
         <a class="post-tag btn btn-outline-primary" href="/tags/password-cracking/">Password Cracking</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/web-application/">Web Application</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/net/">.NET</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/user-enumeration/">User Enumeration</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">Active Directory</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ad-dcsync/">AD DCSync</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/enterprise-network/">Enterprise Network</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/pass-the-hash/">Pass the Hash</a>
       
     </div>
   </section>

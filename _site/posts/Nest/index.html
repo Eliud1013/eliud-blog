@@ -42,8 +42,8 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="In this post we’re resolving Nest machine from HackTheBox, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service." />
 <meta property="og:description" content="In this post we’re resolving Nest machine from HackTheBox, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service." />
-<link rel="canonical" href="http://localhost:5000/posts/Nest/" />
-<meta property="og:url" content="http://localhost:5000/posts/Nest/" />
+<link rel="canonical" href="/posts/Nest/" />
+<meta property="og:url" content="/posts/Nest/" />
 <meta property="og:site_name" content="Elixir1013" />
 <meta property="og:image" content="https://www.hackthebox.com/storage/avatars/0b1bebcefe0bf8cf8c31de8f8e5b76dc.png" />
 <meta property="og:image:alt" content="Machine Icon" />
@@ -54,7 +54,7 @@
 <meta name="twitter:image:alt" content="Machine Icon" />
 <meta property="twitter:title" content="HTB: Nest Writeup" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-09T20:50:23-07:00","datePublished":"2024-09-03T05:00:00-07:00","description":"In this post we’re resolving Nest machine from HackTheBox, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service.","headline":"HTB: Nest Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/0b1bebcefe0bf8cf8c31de8f8e5b76dc.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/Nest/"},"url":"http://localhost:5000/posts/Nest/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-09T20:50:23-07:00","datePublished":"2024-09-03T05:00:00-07:00","description":"In this post we’re resolving Nest machine from HackTheBox, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sensitive info, uncover a password through source code analysis, and decrypt Administrator credentials by enumerating a custom service.","headline":"HTB: Nest Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/0b1bebcefe0bf8cf8c31de8f8e5b76dc.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"/posts/Nest/"},"url":"/posts/Nest/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3207,7 +3207,7 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Builder/">HTB: Builder Writeup</a>
+          <a href="/posts/Escape/">HTB: Escape Writeup</a>
         </li>
       
         
@@ -3215,6 +3215,13 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
         
         <li class="text-truncate lh-lg">
           <a href="/posts/CheatSheet-net-Command/">Cheat Sheet: net Command</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Builder/">HTB: Builder Writeup</a>
         </li>
       
         
@@ -3229,13 +3236,6 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
         
         <li class="text-truncate lh-lg">
           <a href="/posts/Nest/">HTB: Nest Writeup</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/InsecureDeserialization/">Insecure Deserialization: Node.js</a>
         </li>
       
     </ul>
@@ -3383,6 +3383,46 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -3512,7 +3552,106 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3603,81 +3742,6 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
     
   
@@ -3699,118 +3763,6 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -3921,6 +3873,179 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -3988,7 +4113,79 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -4024,16 +4221,10 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -4071,36 +4262,10 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -4117,6 +4282,11 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -4204,10 +4374,11 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
-      
-        
-        
-
+  
+    
+    
+    
+    
   
     
     
@@ -4220,10 +4391,16 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
-      
-        
-        
-
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -4236,7 +4413,112 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -4257,9 +4539,6 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
         <a class="post-tag btn btn-outline-primary" href="/tags/reconnaissance/">Reconnaissance</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/user-enumeration/">User Enumeration</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/vulnerability-assessment/">Vulnerability Assessment</a>
       
         
@@ -4272,16 +4551,19 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
         <a class="post-tag btn btn-outline-primary" href="/tags/password-cracking/">Password Cracking</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/web-application/">Web Application</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/net/">.NET</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/user-enumeration/">User Enumeration</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">Active Directory</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ad-dcsync/">AD DCSync</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/enterprise-network/">Enterprise Network</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/pass-the-hash/">Pass the Hash</a>
       
     </div>
   </section>
@@ -4357,6 +4639,18 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -4370,6 +4664,34 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">Further Reading</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/Escape/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1728129600"
+  data-df="ll"
+  
+>
+  Oct  5, 2024
+</time>
+
+              <h4 class="pt-0 my-2">HTB: Escape Writeup</h4>
+              <div class="text-muted">
+                <p>Scape is a Medium Windows AD machine. It starts with an SMB share exposing a PDF containing MSSQL credentials. The attacker forces MSSQL to authenticate and captures a crackable hash. With these cr...</p>
+              </div>
+            </div>
+          </a>
+        </article>
       
         <article class="col">
           <a href="/posts/Sauna/" class="post-preview card h-100">
@@ -4629,6 +4951,46 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -4758,7 +5120,106 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -4849,81 +5310,6 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
     
   
@@ -4945,118 +5331,6 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -5167,6 +5441,179 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -5234,7 +5681,79 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -5270,16 +5789,10 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -5317,36 +5830,10 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -5363,6 +5850,11 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -5450,10 +5942,11 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
-      
-        
-        
-
+  
+    
+    
+    
+    
   
     
     
@@ -5466,10 +5959,16 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
-      
-        
-        
-
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -5482,7 +5981,112 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -5503,9 +6107,6 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
         <a class="post-tag btn btn-outline-primary" href="/tags/reconnaissance/">Reconnaissance</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/user-enumeration/">User Enumeration</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/vulnerability-assessment/">Vulnerability Assessment</a>
       
         
@@ -5518,16 +6119,19 @@ C:<span class="se">\W</span>indows<span class="se">\s</span>ystem32&gt;
         <a class="post-tag btn btn-outline-primary" href="/tags/password-cracking/">Password Cracking</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/web-application/">Web Application</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/net/">.NET</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/user-enumeration/">User Enumeration</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">Active Directory</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ad-dcsync/">AD DCSync</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/enterprise-network/">Enterprise Network</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/pass-the-hash/">Pass the Hash</a>
       
     </div>
   </section>

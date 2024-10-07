@@ -42,8 +42,8 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="In this post, we’re resolving Sauna Machine from HackTheBox, where we’ll deal with an Active Directory environment. We will exploit AS-REP Roasting on a domain account, reading autologon credentials and doing some domain ACEs analysis using BloodHound, finally we will perfom a DCSync attack to escalate our privileges." />
 <meta property="og:description" content="In this post, we’re resolving Sauna Machine from HackTheBox, where we’ll deal with an Active Directory environment. We will exploit AS-REP Roasting on a domain account, reading autologon credentials and doing some domain ACEs analysis using BloodHound, finally we will perfom a DCSync attack to escalate our privileges." />
-<link rel="canonical" href="http://localhost:5000/posts/Sauna/" />
-<meta property="og:url" content="http://localhost:5000/posts/Sauna/" />
+<link rel="canonical" href="/posts/Sauna/" />
+<meta property="og:url" content="/posts/Sauna/" />
 <meta property="og:site_name" content="Elixir1013" />
 <meta property="og:image" content="https://www.hackthebox.com/storage/avatars/f31d5d0264fadc267e7f38a9d7729d14.png" />
 <meta property="og:image:alt" content="Machine Icon" />
@@ -54,7 +54,7 @@
 <meta name="twitter:image:alt" content="Machine Icon" />
 <meta property="twitter:title" content="HTB: Sauna Writeup" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-10T16:51:20-07:00","datePublished":"2024-09-09T05:00:00-07:00","description":"In this post, we’re resolving Sauna Machine from HackTheBox, where we’ll deal with an Active Directory environment. We will exploit AS-REP Roasting on a domain account, reading autologon credentials and doing some domain ACEs analysis using BloodHound, finally we will perfom a DCSync attack to escalate our privileges.","headline":"HTB: Sauna Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/f31d5d0264fadc267e7f38a9d7729d14.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/Sauna/"},"url":"http://localhost:5000/posts/Sauna/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-10T16:51:20-07:00","datePublished":"2024-09-09T05:00:00-07:00","description":"In this post, we’re resolving Sauna Machine from HackTheBox, where we’ll deal with an Active Directory environment. We will exploit AS-REP Roasting on a domain account, reading autologon credentials and doing some domain ACEs analysis using BloodHound, finally we will perfom a DCSync attack to escalate our privileges.","headline":"HTB: Sauna Writeup","image":{"alt":"Machine Icon","url":"https://www.hackthebox.com/storage/avatars/f31d5d0264fadc267e7f38a9d7729d14.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"/posts/Sauna/"},"url":"/posts/Sauna/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2297,7 +2297,7 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Builder/">HTB: Builder Writeup</a>
+          <a href="/posts/Escape/">HTB: Escape Writeup</a>
         </li>
       
         
@@ -2305,6 +2305,13 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
         
         <li class="text-truncate lh-lg">
           <a href="/posts/CheatSheet-net-Command/">Cheat Sheet: net Command</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Builder/">HTB: Builder Writeup</a>
         </li>
       
         
@@ -2319,13 +2326,6 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
         
         <li class="text-truncate lh-lg">
           <a href="/posts/Nest/">HTB: Nest Writeup</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/InsecureDeserialization/">Insecure Deserialization: Node.js</a>
         </li>
       
     </ul>
@@ -2473,6 +2473,46 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -2602,7 +2642,106 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2693,81 +2832,6 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
     
   
@@ -2789,118 +2853,6 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -3011,6 +2963,179 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -3078,7 +3203,79 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3114,16 +3311,10 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -3161,36 +3352,10 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -3207,6 +3372,11 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -3294,10 +3464,11 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
-      
-        
-        
-
+  
+    
+    
+    
+    
   
     
     
@@ -3310,10 +3481,16 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
-      
-        
-        
-
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -3326,7 +3503,112 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3347,9 +3629,6 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
         <a class="post-tag btn btn-outline-primary" href="/tags/reconnaissance/">Reconnaissance</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/user-enumeration/">User Enumeration</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/vulnerability-assessment/">Vulnerability Assessment</a>
       
         
@@ -3362,16 +3641,19 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
         <a class="post-tag btn btn-outline-primary" href="/tags/password-cracking/">Password Cracking</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/web-application/">Web Application</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/net/">.NET</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/user-enumeration/">User Enumeration</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">Active Directory</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ad-dcsync/">AD DCSync</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/enterprise-network/">Enterprise Network</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/pass-the-hash/">Pass the Hash</a>
       
     </div>
   </section>
@@ -3459,6 +3741,18 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -3472,6 +3766,34 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">Further Reading</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/Escape/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1728129600"
+  data-df="ll"
+  
+>
+  Oct  5, 2024
+</time>
+
+              <h4 class="pt-0 my-2">HTB: Escape Writeup</h4>
+              <div class="text-muted">
+                <p>Scape is a Medium Windows AD machine. It starts with an SMB share exposing a PDF containing MSSQL credentials. The attacker forces MSSQL to authenticate and captures a crackable hash. With these cr...</p>
+              </div>
+            </div>
+          </a>
+        </article>
       
         <article class="col">
           <a href="/posts/Builder/" class="post-preview card h-100">
@@ -3524,34 +3846,6 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
               <h4 class="pt-0 my-2">HTB: Nest Writeup</h4>
               <div class="text-muted">
                 <p>In this post we&#39;re resolving Nest machine from HackTheBox, this is cataloged as an easy Windows box where SMB guest access leads to low-privileged credentials. Dive into configuration files for sen...</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/CheatSheet-net-Command/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1726747200"
-  data-df="ll"
-  
->
-  Sep 19, 2024
-</time>
-
-              <h4 class="pt-0 my-2">Cheat Sheet: net Command</h4>
-              <div class="text-muted">
-                <p>The net command is a command-line tool that enables the management and configuration of various services and network resources. This cheat sheet includes the net commands that I find particularly u...</p>
               </div>
             </div>
           </a>
@@ -3763,6 +4057,46 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -3892,7 +4226,106 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3983,81 +4416,6 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
     
   
@@ -4079,118 +4437,6 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -4301,6 +4547,179 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -4368,7 +4787,79 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -4404,16 +4895,10 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -4451,36 +4936,10 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -4497,6 +4956,11 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -4584,10 +5048,11 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
-      
-        
-        
-
+  
+    
+    
+    
+    
   
     
     
@@ -4600,10 +5065,16 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
-      
-        
-        
-
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -4616,7 +5087,112 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -4637,9 +5213,6 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
         <a class="post-tag btn btn-outline-primary" href="/tags/reconnaissance/">Reconnaissance</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/user-enumeration/">User Enumeration</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/vulnerability-assessment/">Vulnerability Assessment</a>
       
         
@@ -4652,16 +5225,19 @@ The user <code class="language-plaintext highlighter-rouge">svc_loanmgr</code> h
         <a class="post-tag btn btn-outline-primary" href="/tags/password-cracking/">Password Cracking</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/web-application/">Web Application</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/net/">.NET</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/user-enumeration/">User Enumeration</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/active-directory/">Active Directory</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ad-dcsync/">AD DCSync</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/anonymous-guest-access/">Anonymous/Guest Access</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/enterprise-network/">Enterprise Network</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/pass-the-hash/">Pass the Hash</a>
       
     </div>
   </section>
