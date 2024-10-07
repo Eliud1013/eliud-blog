@@ -4791,7 +4791,7 @@ We can serialize an object that contains a function that will establish a TCP co
 
   </body>
   <script>
-    const numStars = 100;
+    const numStars = 110;
     const starField = document.createElement("div");
     starField.className = "stars";
     document.body.appendChild(starField);
@@ -4809,8 +4809,10 @@ We can serialize an object that contains a function that will establish a TCP co
 
       const duration = Math.random() * 5 + 7;
       star.style.animationDuration = `${duration}s`;
-
-      const delay = Math.random() * 5;
+      let delay = Math.random() * 2;
+      if (i <= 50) {
+        delay = 0;
+      }
       star.style.animationDelay = `${delay}s`;
 
       starField.appendChild(star);

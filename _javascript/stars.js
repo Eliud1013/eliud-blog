@@ -16,6 +16,7 @@ for (let i = 0; i < numStars; i++) {
 
   const duration = Math.random() * 5 + 7;
   star.style.animationDuration = `${duration}s`;
+  star.style.animationDuration = `0s`;
 
   const delay = Math.random() * 5;
   star.style.animationDelay = `${delay}s`;

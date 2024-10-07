@@ -46,11 +46,11 @@
 <meta property="og:url" content="/categories/" />
 <meta property="og:site_name" content="Elixir1013" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-10-07T14:37:54-07:00" />
+<meta property="article:published_time" content="2024-10-07T15:30:00-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Categories" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-07T14:37:54-07:00","datePublished":"2024-10-07T14:37:54-07:00","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"Categories","mainEntityOfPage":{"@type":"WebPage","@id":"/categories/"},"url":"/categories/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-07T15:30:00-07:00","datePublished":"2024-10-07T15:30:00-07:00","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"Categories","mainEntityOfPage":{"@type":"WebPage","@id":"/categories/"},"url":"/categories/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3434,7 +3434,7 @@
 
   </body>
   <script>
-    const numStars = 100;
+    const numStars = 110;
     const starField = document.createElement("div");
     starField.className = "stars";
     document.body.appendChild(starField);
@@ -3452,8 +3452,10 @@
 
       const duration = Math.random() * 5 + 7;
       star.style.animationDuration = `${duration}s`;
-
-      const delay = Math.random() * 5;
+      let delay = Math.random() * 2;
+      if (i <= 50) {
+        delay = 0;
+      }
       star.style.animationDelay = `${delay}s`;
 
       starField.appendChild(star);
