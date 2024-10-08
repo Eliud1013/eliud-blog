@@ -42,8 +42,8 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="Scape is a Medium Windows AD machine. It starts with an SMB share exposing a PDF containing MSSQL credentials. The attacker forces MSSQL to authenticate and captures a crackable hash. With these credentials, they gain command execution using WinRM. Further enumeration reveals user credentials, and a vulnerable certificate template (ESC1) allows the attacker to request a certificate for the Administrator account, ultimately obtaining the Administrator’s hash." />
 <meta property="og:description" content="Scape is a Medium Windows AD machine. It starts with an SMB share exposing a PDF containing MSSQL credentials. The attacker forces MSSQL to authenticate and captures a crackable hash. With these credentials, they gain command execution using WinRM. Further enumeration reveals user credentials, and a vulnerable certificate template (ESC1) allows the attacker to request a certificate for the Administrator account, ultimately obtaining the Administrator’s hash." />
-<link rel="canonical" href="/posts/Escape/" />
-<meta property="og:url" content="/posts/Escape/" />
+<link rel="canonical" href="http://localhost:5000/posts/Escape/" />
+<meta property="og:url" content="http://localhost:5000/posts/Escape/" />
 <meta property="og:site_name" content="Elixir1013" />
 <meta property="og:image" content="https://labs.hackthebox.com/storage/avatars/80936664b3da83a92b28602e79e47d79.png" />
 <meta property="og:image:alt" content="Machine Icon" />
@@ -54,7 +54,7 @@
 <meta name="twitter:image:alt" content="Machine Icon" />
 <meta property="twitter:title" content="HTB: Escape Writeup" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-05T05:00:00-07:00","datePublished":"2024-10-05T05:00:00-07:00","description":"Scape is a Medium Windows AD machine. It starts with an SMB share exposing a PDF containing MSSQL credentials. The attacker forces MSSQL to authenticate and captures a crackable hash. With these credentials, they gain command execution using WinRM. Further enumeration reveals user credentials, and a vulnerable certificate template (ESC1) allows the attacker to request a certificate for the Administrator account, ultimately obtaining the Administrator’s hash.","headline":"HTB: Escape Writeup","image":{"alt":"Machine Icon","url":"https://labs.hackthebox.com/storage/avatars/80936664b3da83a92b28602e79e47d79.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"/posts/Escape/"},"url":"/posts/Escape/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-08T07:11:32-07:00","datePublished":"2024-10-05T05:00:00-07:00","description":"Scape is a Medium Windows AD machine. It starts with an SMB share exposing a PDF containing MSSQL credentials. The attacker forces MSSQL to authenticate and captures a crackable hash. With these credentials, they gain command execution using WinRM. Further enumeration reveals user credentials, and a vulnerable certificate template (ESC1) allows the attacker to request a certificate for the Administrator account, ultimately obtaining the Administrator’s hash.","headline":"HTB: Escape Writeup","image":{"alt":"Machine Icon","url":"https://labs.hackthebox.com/storage/avatars/80936664b3da83a92b28602e79e47d79.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:5000/posts/Escape/"},"url":"http://localhost:5000/posts/Escape/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -2111,6 +2111,28 @@
       </span>
 
       <!-- lastmod date -->
+      
+      <span>
+        Updated <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1728396692"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Oct  8, 2024
+</time>
+
+      </span>
            
 
       <div class="mt-3 mb-3">
@@ -2913,14 +2935,7 @@ And that’s it! We’ve got a shell as Administrator.</p>
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Escape/">HTB: Escape Writeup</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/CheatSheet-net-Command/">Cheat Sheet: net Command</a>
+          <a href="/posts/Sauna/">HTB: Sauna Writeup</a>
         </li>
       
         
@@ -2934,7 +2949,14 @@ And that’s it! We’ve got a shell as Administrator.</p>
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Sauna/">HTB: Sauna Writeup</a>
+          <a href="/posts/Escape/">HTB: Escape Writeup</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/CheatSheet-net-Command/">Cheat Sheet: net Command</a>
         </li>
       
         

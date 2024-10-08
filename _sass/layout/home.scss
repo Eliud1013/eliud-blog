@@ -28,6 +28,7 @@
 
       img {
         @extend %img-radius;
+        filter: brightness(0.8);
       }
     }
 

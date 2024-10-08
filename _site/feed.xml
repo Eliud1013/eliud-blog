@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>/</id>
+  <id>http://localhost:5000/</id>
   <title>Elixir1013</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-10-08T07:10:32-07:00</updated>
+  <updated>2024-10-08T07:46:22-07:00</updated>
   <author>
     <name>Eliud</name>
-    <uri>/</uri>
+    <uri>http://localhost:5000/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="http://localhost:5000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="/"/>
+    href="http://localhost:5000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
   <rights> © 2024 Eliud </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>HTB: Escape Writeup</title>
-    <link href="/posts/Escape/" rel="alternate" type="text/html" title="HTB: Escape Writeup" />
+    <link href="http://localhost:5000/posts/Escape/" rel="alternate" type="text/html" title="HTB: Escape Writeup" />
     <published>2024-10-05T05:00:00-07:00</published>
   
-    <updated>2024-10-05T05:00:00-07:00</updated>
+    <updated>2024-10-08T07:11:32-07:00</updated>
   
-    <id>/posts/Escape/</id>
-    <content src="/posts/Escape/" />
+    <id>http://localhost:5000/posts/Escape/</id>
+    <content src="http://localhost:5000/posts/Escape/" />
     <author>
       <name>Eliud</name>
     </author>
@@ -47,13 +47,13 @@
   
   <entry>
     <title>Cheat Sheet: net Command</title>
-    <link href="/posts/CheatSheet-net-Command/" rel="alternate" type="text/html" title="Cheat Sheet: net Command" />
+    <link href="http://localhost:5000/posts/CheatSheet-net-Command/" rel="alternate" type="text/html" title="Cheat Sheet: net Command" />
     <published>2024-09-19T05:00:00-07:00</published>
   
     <updated>2024-09-20T01:29:13-07:00</updated>
   
-    <id>/posts/CheatSheet-net-Command/</id>
-    <content src="/posts/CheatSheet-net-Command/" />
+    <id>http://localhost:5000/posts/CheatSheet-net-Command/</id>
+    <content src="http://localhost:5000/posts/CheatSheet-net-Command/" />
     <author>
       <name>Eliud</name>
     </author>
@@ -73,13 +73,13 @@
   
   <entry>
     <title>HTB: Builder Writeup</title>
-    <link href="/posts/Builder/" rel="alternate" type="text/html" title="HTB: Builder Writeup" />
+    <link href="http://localhost:5000/posts/Builder/" rel="alternate" type="text/html" title="HTB: Builder Writeup" />
     <published>2024-09-16T05:00:00-07:00</published>
   
-    <updated>2024-09-20T01:23:41-07:00</updated>
+    <updated>2024-10-08T07:11:32-07:00</updated>
   
-    <id>/posts/Builder/</id>
-    <content src="/posts/Builder/" />
+    <id>http://localhost:5000/posts/Builder/</id>
+    <content src="http://localhost:5000/posts/Builder/" />
     <author>
       <name>Eliud</name>
     </author>
@@ -99,13 +99,13 @@
   
   <entry>
     <title>HTB: Sauna Writeup</title>
-    <link href="/posts/Sauna/" rel="alternate" type="text/html" title="HTB: Sauna Writeup" />
+    <link href="http://localhost:5000/posts/Sauna/" rel="alternate" type="text/html" title="HTB: Sauna Writeup" />
     <published>2024-09-09T05:00:00-07:00</published>
   
-    <updated>2024-09-10T16:51:20-07:00</updated>
+    <updated>2024-10-08T07:11:32-07:00</updated>
   
-    <id>/posts/Sauna/</id>
-    <content src="/posts/Sauna/" />
+    <id>http://localhost:5000/posts/Sauna/</id>
+    <content src="http://localhost:5000/posts/Sauna/" />
     <author>
       <name>Eliud</name>
     </author>
@@ -125,13 +125,13 @@
   
   <entry>
     <title>Insecure Deserialization: Node.js</title>
-    <link href="/posts/InsecureDeserialization/" rel="alternate" type="text/html" title="Insecure Deserialization: Node.js" />
+    <link href="http://localhost:5000/posts/InsecureDeserialization/" rel="alternate" type="text/html" title="Insecure Deserialization: Node.js" />
     <published>2024-09-06T05:00:00-07:00</published>
   
     <updated>2024-09-06T05:00:00-07:00</updated>
   
-    <id>/posts/InsecureDeserialization/</id>
-    <content src="/posts/InsecureDeserialization/" />
+    <id>http://localhost:5000/posts/InsecureDeserialization/</id>
+    <content src="http://localhost:5000/posts/InsecureDeserialization/" />
     <author>
       <name>Eliud</name>
     </author>
