@@ -1163,6 +1163,7 @@ search {
 }
 
 #tail-wrapper {
+  z-index: -2;
   > :not(script) {
     margin-top: 3rem;
   }
